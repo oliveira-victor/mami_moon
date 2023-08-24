@@ -1,0 +1,74 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 140px;
+
+    &__nav {
+        width: 96%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo {
+            height: 70px;
+        }
+
+        &__menu {
+            display: flex;
+
+            & li {
+                padding: 8px 30px;
+
+                & a {
+                    color: #fff;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        color: #d34c4c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Underline animation
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #d34c4c;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #d34c4c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+// testing
+.change-navbar {
+    height: 80px;
+    background-color: #d34c4c;
+}
+
+.reset-navbar {
+    height: 140px;
+    background-color: transparent;
+}

@@ -1,0 +1,45 @@
+@use 'variables';
+
+.hero {
+    width: 100%;
+    height: 96vh;
+    background-image: url(../images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        width: 50%;
+        text-align: center;
+        color: #fff;
+        font-size: 48px;
+
+        & img {
+            width: 500px;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 80px;
+        }
+
+        & button {
+            cursor: pointer;
+            display: block;
+            margin: 40px auto;
+            padding: 20px 26px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Comfortaa', cursive;
+            text-transform: uppercase;
+            background-color: variables.$buttonColor;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            transition: all .3s ease;
+
+            &:hover {
+                transform: translateY(-6px);
+                background-color: lighten(variables.$buttonColor, 10%);
+            }
+        }
+    }
+}

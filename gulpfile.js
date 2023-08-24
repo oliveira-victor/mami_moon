@@ -16,9 +16,9 @@ function scripts() {
 }
 
 function webpImage() {
-    return src('./src/images/*')
+    return gulp.src('./src/images/*')
         .pipe(webp())
-        .pipe(dest('./dist/images'))
+        .pipe(gulp.dest('./dist/images'))
 }
 
 exports.default = gulp.parallel(styles, scripts, webpImage);

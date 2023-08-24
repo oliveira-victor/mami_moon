@@ -1,5 +1,25 @@
+@use 'header';
+@use 'hero';
+@use 'services';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 }
