@@ -16,23 +16,25 @@
     <div class="container">
         <header class="header">
             <nav class="header__nav">
-                <div class="logo-container">
-                    <h1>
-                        <img class="header__nav__logo" src="./dist/images/logo.svg" alt="Mami Moon icon">
-                    </h1>
-                    <div id="logo-txt">
-                        <img src="./dist/images/logo-txt.svg" alt="Mami Moon text logo">
+                <a href="#home">
+                    <div class="logo-container">
+                        <h1>
+                            <img class="header__nav__logo" src="./dist/images/logo.svg" alt="Mami Moon icon">
+                        </h1>
+                        <div id="logo-txt">
+                            <img src="./dist/images/logo-txt.svg" alt="Mami Moon text logo">
+                        </div>
                     </div>
-                </div>
+                </a>
                 <ul class="header__nav__menu">
                     <li class="hover-underline-animation">
-                        <a href="#">Home</a>
+                        <a href="#info">What is a doula?</a>
                     </li>
                     <li class="hover-underline-animation">
                         <a href="#">Services</a>
                     </li>
                     <li class="hover-underline-animation">
-                        <a href="#">About</a>
+                        <a href="#">About me</a>
                     </li>
                     <li class="hover-underline-animation">
                         <a href="#">Contact</a>
@@ -41,14 +43,14 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
+            <section id="home" class="hero">
                 <div class="hero__text">
                     <img src="./dist/images/logo-mamimoon.svg" alt="Mami Moon Logo">
                     <p>Here goes a beautiful intro text that makes moms cry.</p>
-                    <button>get a doula</button>
+                    <button>Contact me</button>
                 </div>
             </section>
-            <section class="services"></section>
+            <section id="info" class="services"></section>
         </main>
     </div>
     <script src="./dist/js/main.js"></script>
