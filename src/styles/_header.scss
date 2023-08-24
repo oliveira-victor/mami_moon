@@ -4,6 +4,7 @@
     align-items: center;
     position: fixed;
     height: 140px;
+    transition: all .5s ease;
 
     &__nav {
         width: 96%;
@@ -12,8 +13,30 @@
         align-items: center;
         justify-content: space-between;
 
-        &__logo {
-            height: 70px;
+        & .logo-container {
+            display: flex;
+        }
+
+        & img {
+            height: 60px;
+        }
+
+        & #logo-txt {
+            display: none;
+
+            & img {
+                animation: fadeIn 1.5s;
+
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
         }
 
         &__menu {
@@ -25,10 +48,6 @@
                 & a {
                     color: #fff;
                     transition: all .5s ease;
-
-                    &:hover {
-                        color: #d34c4c;
-                    }
                 }
             }
         }
@@ -40,7 +59,7 @@
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: #d34c4c;
+    color: #fff;
 }
 
 .hover-underline-animation::after {
@@ -51,7 +70,7 @@
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: #d34c4c;
+    background-color: #fff;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -62,13 +81,8 @@
 }
 
 
-// testing
+// navbar effect
 .change-navbar {
-    height: 80px;
+    height: 90px;
     background-color: #d34c4c;
-}
-
-.reset-navbar {
-    height: 140px;
-    background-color: transparent;
 }
