@@ -1,6 +1,7 @@
 // Navbar scroll effect
 const navbar = document.querySelector('.header');
 const navbarLogo = document.getElementById('logo-txt');
+const mobileNav = document.querySelector('mobile-nav');
 
 window.addEventListener('scroll', function() {
     const currentPosition = window.scrollY;

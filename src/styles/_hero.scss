@@ -4,6 +4,7 @@
     width: 100%;
     height: 96vh;
     background-image: url(../images/hero.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +40,22 @@
             &:hover {
                 transform: translateY(-6px);
                 background-color: lighten(variables.$mainColor, 10%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        background-position: center;
+        height: 100vh;
+    
+        &__text {
+            width: 90%;
+            font-size: 30px;
+    
+            & img {
+                width: 100%;
             }
         }
     }
