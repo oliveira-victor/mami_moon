@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120.65148mm"
+   height="120.65149mm"
+   viewBox="0 0 120.65148 120.65149"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect2-2"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipath_lpe_path-effect2-2">
+      <circle
+         style="display:none;fill:#ff0000;stroke-width:2.38712;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+         id="circle4"
+         cx="-191.33894"
+         cy="166.84569"
+         r="43.271275"
+         clip-path="none"
+         d="m -148.06767,166.84569 a 43.271275,43.271275 0 0 1 -43.27127,43.27127 43.271275,43.271275 0 0 1 -43.27128,-43.27127 43.271275,43.271275 0 0 1 43.27128,-43.27128 43.271275,43.271275 0 0 1 43.27127,43.27128 z" />
+      <path
+         id="lpe_path-effect2-2"
+         style="fill:#ff0000;stroke-width:2.38712;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+         class="powerclip"
+         d="m -235.60807,114.54302 h 105.92189 v 105.92189 h -105.92189 z m 87.5404,52.30267 a 43.271275,43.271275 0 0 0 -43.27127,-43.27128 43.271275,43.271275 0 0 0 -43.27128,43.27128 43.271275,43.271275 0 0 0 43.27128,43.27127 43.271275,43.271275 0 0 0 43.27127,-43.27127 z" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(402.92576,-373.29516)">
+    <path
+       style="fill:#ffffff;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="path1-23"
+       clip-path="url(#clipath_lpe_path-effect2-2)"
+       inkscape:path-effect="#path-effect2-2"
+       sodipodi:type="arc"
+       sodipodi:cx="-182.64713"
+       sodipodi:cy="167.50397"
+       sodipodi:rx="47.960945"
+       sodipodi:ry="47.960945"
+       d="m -134.68618,167.50397 a 47.960945,47.960945 0 0 1 -47.96095,47.96094 47.960945,47.960945 0 0 1 -47.96094,-47.96094 47.960945,47.960945 0 0 1 47.96094,-47.96095 47.960945,47.960945 0 0 1 47.96095,47.96095 z"
+       transform="matrix(-1.2578097,0,0,1.2578097,-572.33533,222.93279)" />
+  </g>
+</svg>
