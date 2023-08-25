@@ -21,14 +21,6 @@ function images() {
         .pipe(gulp.dest('./dist/images'))
 }
 
-/*
-function webpImage() {
-    return gulp.src('./src/images/*')
-        .pipe(webp())
-        .pipe(gulp.dest('./dist/images'))
-}
-*/
-
 exports.default = gulp.parallel(styles, scripts, images);
 
 exports.watch = function() {
