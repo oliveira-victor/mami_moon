@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                 </a>
                 <ul class="header__nav__menu">
                     <li class="hover-underline-animation">
-                        <a href="#info">What is a doula?</a>
+                        <a href="#welcome">What is a doula?</a>
                     </li>
                     <li class="hover-underline-animation">
                         <a href="#">Services</a>
@@ -52,11 +53,11 @@
                         </div>
                     </li>
                 </a>
-                <a href="#info">
+                <a href="#welcome">
                     <li>
                         <div><img src="./dist/images/moon1.svg" alt=""></div>
                         <div>
-                            Intro
+                            Info
                         </div>
                     </li>
                 </a>
@@ -90,13 +91,34 @@
             <section id="home" class="hero">
                 <div class="hero__text">
                     <img src="./dist/images/logo-mamimoon.svg" alt="Mami Moon Logo">
-                    <p>Here goes a beautiful intro text that makes moms cry.</p>
+                    Here goes a beautiful intro text that makes moms cry.
                     <button>Contact me</button>
                 </div>
             </section>
-            <section id="info" class="services"></section>
+            <section id="welcome" class="welcome wrapper">
+                <h2 data-aos="fade-up" class="title">
+                    Who mothers the mother?
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="70" data-aos-duration="1000">
+                    As your postpartum doula, I’m here to nurture and care for you in the time after you birth your
+                    baby.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    On my first visit I may prepare you a foot soak as we go through how you are feeling and outline a
+                    plan for that session. We may talk about ways of bathing the baby as I prepare a nutritious snack
+                    for those timeless nights when your baby has all the energy in the world. I can run some errands for
+                    you, fold all your baby clothes, and also share some self care practices like postnatal yoga, self
+                    massage or breathing exercise to help you release tension and nurture yourself. I am here to support
+                    you and your family. All sessions are designed in a personalized and unique way. It’s a blessing!
+                </p>
+            </section>
+            <div class="empty-space"></div>
         </main>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./dist/js/main.js"></script>
 </body>
 

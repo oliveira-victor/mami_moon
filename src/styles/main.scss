@@ -1,5 +1,7 @@
+@use 'variables';
 @use 'header';
 @use 'hero';
+@use 'welcome';
 @use 'services';
 
 * {
@@ -16,14 +18,46 @@ html {
 body {
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
+
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+    }
 }
 
 a {
     text-decoration: none;
 }
 
+p {
+    max-width: 1000px;
+    line-height: 1.8;
+    margin: 0 auto;
+    padding:10px 0;
+
+    @media screen and (max-width: 767px) {
+        width: 90%;
+    }
+}
+
 .container {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 46px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: variables.$mainColor;
+}
+
+.empty-space {
+    height: 110px;
 }
