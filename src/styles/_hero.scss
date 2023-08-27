@@ -21,27 +21,6 @@
             margin: 0 auto;
             padding-bottom: 80px;
         }
-
-        & button {
-            cursor: pointer;
-            display: block;
-            margin: 40px auto;
-            padding: 20px 26px;
-            font-size: 16px;
-            font-weight: bold;
-            font-family: 'Comfortaa', cursive;
-            text-transform: uppercase;
-            background-color: variables.$mainColor;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            transition: all .3s ease;
-
-            &:hover {
-                transform: translateY(-6px);
-                background-color: lighten(variables.$mainColor, 10%);
-            }
-        }
     }
 }
 

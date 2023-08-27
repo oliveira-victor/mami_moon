@@ -1,0 +1,44 @@
+.about {
+
+    &__bio {
+        display: grid;
+        grid-template-columns: 30% auto;
+        gap: 50px;
+
+        &__jacque {
+            width: 100%;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+            transform: rotate(-4deg);
+        }
+
+        &__text {
+            padding: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .about {
+        &__parallax {
+            height: 60vh;
+            & p {
+                margin: 50px auto;
+            }
+        }
+
+        &__bio {
+            display: block;
+
+            &__jacque {
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            &__text {
+                padding: 6px;
+                margin-top: 40px;
+            }
+        }
+    }
+}

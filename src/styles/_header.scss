@@ -16,6 +16,14 @@
         align-items: center;
         justify-content: space-between;
 
+        &__logo {
+            transition: all .5s ease;
+
+            &:hover {
+                transform: rotate(14deg);
+            }
+        }
+
         & .logo-container {
             display: flex;
         }

@@ -2,6 +2,7 @@
 @use 'header';
 @use 'hero';
 @use 'welcome';
+@use 'bio';
 @use 'services';
 
 * {
@@ -39,6 +40,44 @@ p {
     }
 }
 
+section {
+    margin-top: 100px;
+}
+
+.main-button {
+    cursor: pointer;
+    display: block;
+    margin: 40px auto;
+    padding: 20px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    background-color: variables.$mainColor;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: all .3s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        background-color: lighten(variables.$mainColor, 10%);
+    }
+}
+
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 44px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 30px;
+    }
+}
+
+.justify-right {
+    text-align: right;
+}
+
 .container {
     max-width: 1920px;
     width: 100%;
@@ -56,6 +95,20 @@ p {
     text-align: center;
     padding-bottom: 50px;
     color: variables.$mainColor;
+}
+
+.parallax {
+    color: #fff;
+    height: 40vh;
+    background-image: url(../images/hero.jpg);
+    background-attachment: fixed;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+
+    & div {
+        width: 100%;
+    }
 }
 
 .empty-space {

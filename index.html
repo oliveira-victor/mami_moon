@@ -8,7 +8,8 @@
     <link rel="icon" type="image/svg+xml" href="/favico.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -32,10 +33,10 @@
                         <a href="#welcome">What is a doula?</a>
                     </li>
                     <li class="hover-underline-animation">
-                        <a href="#">Services</a>
+                        <a href="#about">About me</a>
                     </li>
                     <li class="hover-underline-animation">
-                        <a href="#">About me</a>
+                        <a href="#">Services</a>
                     </li>
                     <li class="hover-underline-animation">
                         <a href="#">Contact</a>
@@ -47,7 +48,7 @@
             <ul class="mobile-nav__container">
                 <a href="#home">
                     <li>
-                        <div><img src="./dist/images/logo.svg" alt=""></div>
+                        <div><img src="./dist/images/logo.svg" alt="Mami Moon icon"></div>
                         <div>
                             Home
                         </div>
@@ -55,23 +56,15 @@
                 </a>
                 <a href="#welcome">
                     <li>
-                        <div><img src="./dist/images/moon1.svg" alt=""></div>
+                        <div><img src="./dist/images/moon1.svg" alt="Info icon"></div>
                         <div>
                             Info
                         </div>
                     </li>
                 </a>
-                <a href="#">
+                <a href="#about">
                     <li>
-                        <div><img src="./dist/images/moon2.svg" alt=""></div>
-                        <div>
-                            Services
-                        </div>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <div><img src="./dist/images/moon3.svg" alt=""></div>
+                        <div><img src="./dist/images/moon2.svg" alt="Services icon"></div>
                         <div>
                             About
                         </div>
@@ -79,7 +72,15 @@
                 </a>
                 <a href="#">
                     <li>
-                        <div><img src="./dist/images/moon4.svg" alt=""></div>
+                        <div><img src="./dist/images/moon3.svg" alt="About icon"></div>
+                        <div>
+                            Services
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div><img src="./dist/images/moon4.svg" alt="Contact icon"></div>
                         <div>
                             Contact
                         </div>
@@ -88,22 +89,22 @@
             </ul>
         </div>
         <main>
-            <section id="home" class="hero">
+            <div id="home" class="hero">
                 <div class="hero__text">
                     <img src="./dist/images/logo-mamimoon.svg" alt="Mami Moon Logo">
                     Here goes a beautiful intro text that makes moms cry.
-                    <button>Contact me</button>
+                    <button class="main-button">Contact me</button>
                 </div>
-            </section>
+            </div>
             <section id="welcome" class="welcome wrapper">
-                <h2 data-aos="fade-up" class="title">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="title">
                     Who mothers the mother?
                 </h2>
-                <p data-aos="fade-up" data-aos-delay="70" data-aos-duration="1000">
+                <p data-aos="fade-up" data-aos-delay="70" data-aos-duration="1200">
                     As your postpartum doula, I’m here to nurture and care for you in the time after you birth your
                     baby.
                 </p>
-                <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400">
                     On my first visit I may prepare you a foot soak as we go through how you are feeling and outline a
                     plan for that session. We may talk about ways of bathing the baby as I prepare a nutritious snack
                     for those timeless nights when your baby has all the energy in the world. I can run some errands for
@@ -111,6 +112,37 @@
                     massage or breathing exercise to help you release tension and nurture yourself. I am here to support
                     you and your family. All sessions are designed in a personalized and unique way. It’s a blessing!
                 </p>
+            </section>
+            <div class="parallax">
+                <div>
+                    <p class="quote">
+                        Mami Moon was born to nurturing the new mom...
+                    </p>
+                    <p class="quote justify-right">
+                        ...to assist in the healing and the blooming of a new mother.
+                    </p>
+                </div>
+            </div>
+            <section id="about" class="about">
+                
+                <div class="about__bio wrapper">
+                    <img class="about__bio__jacque" src="./dist/images/jacque.jpg" alt="Portrait of Jaque Souza">
+                    <div data-aos="fade-up" data-aos-delay="70" data-aos-duration="1400">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" class="title">About me</h2>
+                        <p class="about__bio__text">
+                            Born and raised in Brazil, Jacque was studying Social Sciences when she became interested in
+                            body
+                            movement and healing. In 2015 in the city of Medellin (Colombia), she started teaching prenatal
+                            classes. Presently, Jacque is a prenatal and postnatal yoga instructor. She is currently
+                            offering
+                            classes at Breathing Space in SE DC. She has experience caring for infants and babies in a
+                            Montessori school and as a nanny. She received her postpartum doula certificate through CAPPA
+                            and is
+                            excited to share her knowledge and help your family.
+                        </p>
+                        <button class="main-button">Get in touch</button>
+                    </div>
+                </div>
             </section>
             <div class="empty-space"></div>
         </main>
