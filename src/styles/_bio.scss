@@ -1,4 +1,7 @@
+@use 'variables';
+
 .about {
+    list-style-type: none;
 
     &__bio {
         display: grid;
@@ -8,12 +11,58 @@
         &__jacque {
             width: 100%;
             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-            transform: rotate(-4deg);
+            transition: all 2s ease;
+        }
+
+        &__tabs {
+            padding-left: 26px;
+
+            & .is-selected {
+                border-bottom: 2px solid variables.$secondaryColor;
+            }
+
+            &__tab {
+                color: variables.$secondaryColor;
+                cursor: pointer;
+                font-size: 20px;
+                margin: 0 10px;
+                padding: 4px 10px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid transparent;
+                text-transform: uppercase;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
+                    padding: 0;
+                    margin-top: 40px;
+                }
+            }
         }
 
         &__text {
             padding: 26px;
+
+            & .txt-funfacts {
+                display: none;
+                margin: 0 auto;
+                padding: 10px 0;
+
+                @media screen and (max-width: 767px) {
+                    width: 80%;
+                }
+
+                & li {
+                    line-height: 1.8;
+                }
+            }
+
+            & .txt-expect {
+                display: none;
+            }
         }
+
+
 
         @media screen and (max-width: 767px) {
             & h2 {
@@ -24,10 +73,11 @@
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .about {
         &__parallax {
             height: 60vh;
+
             & p {
                 margin: 50px auto;
             }
