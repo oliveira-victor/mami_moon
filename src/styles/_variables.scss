@@ -1,38 +1,10 @@
-$mainColor: #C3ADA5ff;
-$secondaryColor: #9E6B53ff;
+$mainColor: #FA9287;
+$secondaryColor: #DE9F5F;
 
 // COLOR PALETTE
 
-/* SCSS HEX */
-$jet: #312B26ff;
-$chestnut: #8D5440ff;
-$pale-dogwood: #C3ADA5ff;
-$brown-sugar: #9E6B53ff;
-$bole: #834538ff;
-
-/* SCSS HSL */
-$jet: hsla(27, 13%, 17%, 1);
-$chestnut: hsla(16, 38%, 40%, 1);
-$pale-dogwood: hsla(16, 20%, 71%, 1);
-$brown-sugar: hsla(19, 31%, 47%, 1);
-$bole: hsla(10, 40%, 37%, 1);
-
-/* SCSS RGB */
-$jet: rgba(49, 43, 38, 1);
-$chestnut: rgba(141, 84, 64, 1);
-$pale-dogwood: rgba(195, 173, 165, 1);
-$brown-sugar: rgba(158, 107, 83, 1);
-$bole: rgba(131, 69, 56, 1);
-
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-right: linear-gradient(90deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-bottom: linear-gradient(180deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-left: linear-gradient(270deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-top-right: linear-gradient(45deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-bottom-right: linear-gradient(135deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-top-left: linear-gradient(225deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-bottom-left: linear-gradient(315deg, #312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-$gradient-radial: radial-gradient(#312B26ff, #8D5440ff, #C3ADA5ff, #9E6B53ff, #834538ff);
-
-// https://coolors.co/312b26-8d5440-c3ada5-9e6b53-834538
+$one: #FFC76E;
+$two: #DE9F5F;
+$three: #F4A374;
+$four: #DE7D5F;
+$five: #FA9287;
