@@ -1,8 +1,7 @@
 @use 'variables';
 
 .about {
-    list-style-type: none;
-
+    
     &__bio {
         display: grid;
         grid-template-columns: 30% auto;
@@ -54,6 +53,7 @@
 
                 & li {
                     line-height: 1.8;
+                    list-style-type: disc;
                 }
             }
 
