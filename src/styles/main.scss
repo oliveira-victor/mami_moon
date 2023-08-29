@@ -100,15 +100,21 @@ section {
 
 .parallax {
     color: #fff;
-    height: 40vh;
-    background-image: url(../images/hero.jpg);
+    height: 30vh;
+    background-image: url(../images/stars-bg.gif);
+    background-size: 150px;
     background-attachment: fixed;
     margin: 100px auto;
     display: flex;
     align-items: center;
+    text-shadow: 0px 2px 19px rgba(255,255,255,0.46);
 
     & div {
         width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 40vh;
     }
 }
 
