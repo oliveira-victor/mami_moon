@@ -5,6 +5,13 @@
     100% { opacity: 1; }
 }
 
+.slow-fade-in { animation: slowFadeIn 3s; }
+
+@keyframes slowFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .rotate {
     transform: rotate(-4deg);
 }
