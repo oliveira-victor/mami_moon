@@ -19,15 +19,17 @@ window.addEventListener('scroll', function() {
 
 // Initial quote animation
 const quoteReference = document.querySelector('.quote-reference');
+const quoteSpan = document.querySelector('.quote-animation');
 let quoteStarted = false;
 
 var observer = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true && quoteStarted === false) {
+        quoteSpan.style.display = 'block'
         typeWriter(phrase)
         quoteStarted = true;
         quoteReference.style.display = 'block';
 	}
-});
+}, { threshold: [1] });
 
 observer.observe(document.querySelector(".quote-big"));
 
