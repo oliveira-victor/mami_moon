@@ -17,6 +17,16 @@ window.addEventListener('scroll', function() {
     }
 })
 
+// Tell more info
+const tellMore = document.querySelector('.tell-more');
+const extraInfo = document.querySelector('.extra-info');
+
+tellMore.addEventListener('click', function() {
+    tellMore.style.display = 'none';
+    extraInfo.style.display = 'block';
+    extraInfo.classList.add('fade-in')
+})
+
 // About tabs
 const tabBio = document.getElementById('tab-bio');
 const tabFunfacts = document.getElementById('tab-funfacts');

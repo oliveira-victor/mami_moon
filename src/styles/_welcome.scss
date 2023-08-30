@@ -1,7 +1,22 @@
+@use 'variables';
+
 .welcome {
     padding: 100px 0;
 
     @media screen and (max-width: 767px) {
         padding-top: 50px;
+    }
+
+    & .tell-more {
+        cursor: pointer;
+        color: variables.$mainColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & .extra-info {
+        display: none;
     }
 }
