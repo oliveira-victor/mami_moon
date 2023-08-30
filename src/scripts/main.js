@@ -17,6 +17,34 @@ window.addEventListener('scroll', function() {
     }
 })
 
+// Initial quote animation
+const quoteReference = document.querySelector('.quote-reference');
+let quoteStarted = false;
+
+var observer = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true && quoteStarted === false) {
+        typeWriter(phrase)
+        quoteStarted = true;
+        quoteReference.style.display = 'block';
+	}
+});
+
+observer.observe(document.querySelector(".quote-big"));
+
+// Typewriter effect
+function typeWriter(el) {
+    const mainText = el.innerHTML.split('')
+    el.innerHTML = ''
+    mainText.forEach(function(letter,i) {
+
+        setTimeout(function() {
+            el.innerHTML += letter
+        }, 40 * i);
+    })
+}
+
+const phrase = document.querySelector('.quote-animation')
+
 // Tell more info
 const tellMore = document.querySelector('.tell-more');
 const extraInfo = document.querySelector('.extra-info');

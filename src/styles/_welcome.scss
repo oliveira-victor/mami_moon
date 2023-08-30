@@ -7,6 +7,12 @@
         padding-top: 50px;
     }
 
+    & .quote-big {
+        & .quote-animation {
+            display: none;
+        }
+    }
+
     & .tell-more {
         cursor: pointer;
         color: variables.$mainColor;
@@ -19,4 +25,8 @@
     & .extra-info {
         display: none;
     }
+}
+
+.quote-reference {
+    display: none;
 }
