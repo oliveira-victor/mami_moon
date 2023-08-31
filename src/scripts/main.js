@@ -112,3 +112,17 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Accordion
+const questions = document.querySelectorAll('[data-accordion-question]')
+
+for (let i = 0; i < questions.length; i++) {
+    questions[i].addEventListener('click', showOrHide);
+}
+
+function showOrHide(element) {
+    const toggleClass = 'accordion__box__item--is-open';
+    const parentElement = element.target.parentNode;
+
+    parentElement.classList.toggle(toggleClass);
+}

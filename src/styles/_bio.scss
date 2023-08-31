@@ -1,9 +1,11 @@
 @use 'variables';
 
 .about {
-    min-height: 70vh;
+    display: flex;
+    align-items: center;
     
     &__bio {
+        min-height: 70vh;
         display: grid;
         grid-template-columns: 30% auto;
         gap: 50px;

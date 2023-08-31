@@ -1,3 +1,66 @@
+@use 'variables';
+
 .services {
-    height: 100vh;
+    background-color: variables.$thirdColor;
+    padding: 140px 0;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 50px;
+    }
+
+    & .accordion {
+        &__box {
+            width: 94%;
+            margin: 40px auto;
+
+            &__item {
+                margin-bottom: 20px;
+
+                &__question {
+                    background-color: variables.$mainColor;
+                    padding: 26px;
+                    position: relative;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    &::after {
+                        content: '+';
+                        position: absolute;
+                        top: 0;
+                        right: 24px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        font-size: 28px;
+                    }
+                }
+
+                &__answer {
+                    background-color: #fff;
+                    height: 0;
+                    overflow: hidden;
+                    padding: 0 26px;
+                    transition: height, 1s ease;
+
+                    & li {
+                        list-style: disc;
+                        margin-left: 26px;
+                        line-height: 1.8;
+                    }
+                }
+
+                &--is-open {
+                    .accordion__box__item__question::after {
+                        content: '-';
+                    }
+                    .accordion__box__item__answer {
+                        height: auto;
+                        padding-top: 26px;
+                        padding-bottom: 26px;
+                        transition: height, 1s ease;
+                    }
+                }
+            }
+        }
+    }
 }
