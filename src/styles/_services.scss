@@ -27,12 +27,13 @@
                 }
 
                 &__question {
-                    background-color: variables.$forthColor;
-                    color: #fff;
+                    background-color: #fff;
+                    color: variables.$mainColor;
                     padding: 26px;
                     position: relative;
                     font-weight: bold;
                     cursor: pointer;
+                    border-bottom: 1px solid variables.$mainColor;
 
                     &::after {
                         content: '+';
@@ -58,12 +59,17 @@
                         margin-left: 26px;
                         line-height: 1.8;
                     }
+
+                    & a:hover {
+                        text-decoration: underline;
+                    }
                 }
 
                 &--is-open {
                     .accordion__box__item__question::after {
                         content: '-';
                     }
+
                     .accordion__box__item__answer {
                         height: auto;
                         padding-top: 26px;
