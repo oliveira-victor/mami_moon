@@ -9,6 +9,8 @@
     }
 
     & .accordion {
+        margin-bottom: 100px;
+
         &__box {
             width: 94%;
             margin: 40px auto;
@@ -25,7 +27,8 @@
                 }
 
                 &__question {
-                    background-color: variables.$mainColor;
+                    background-color: variables.$forthColor;
+                    color: #fff;
                     padding: 26px;
                     position: relative;
                     font-weight: bold;
