@@ -24,7 +24,7 @@
     100% { transform: translate(24%, 16%); }
 }
 
-.cloud-animation { animation: cloudAnimation 3s ease-in-out infinite; }
+.cloud-animation { animation: cloudAnimation 4s ease-in-out infinite; }
 
 @keyframes cloudAnimation {
     0% { transform: translate(14%, 95%); }
