@@ -126,3 +126,20 @@ function showOrHide(element) {
 
     parentElement.classList.toggle(toggleClass);
 }
+
+// Package cards
+const pinkMoonBtn = document.getElementById('card-button-pink');
+const pinkPackageTxt = document.getElementById('included-pink');
+
+const orangeMoonBtn = document.getElementById('card-button-orange');
+const orangePackageTxt = document.getElementById('included-orange');
+
+pinkMoonBtn.addEventListener('click', function() {
+    pinkMoonBtn.style.display = 'none';
+    pinkPackageTxt.style.display = 'block';
+})
+
+orangeMoonBtn.addEventListener('click', function() {
+    orangeMoonBtn.style.display = 'none';
+    orangePackageTxt.style.display = 'block';
+})
