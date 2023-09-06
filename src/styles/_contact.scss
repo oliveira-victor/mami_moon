@@ -1,4 +1,32 @@
 .contact {
-    height: 80vh;
     padding: 140px 0;
+
+    &__form {
+
+        & label {
+            display: block;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        & input {
+            height: 40px;
+            padding: 6px;
+            font-size: 16px;
+        }
+
+        & #message {
+            width: 500px;
+            height: 200px;
+        }
+
+        & #first-name, #last-name {
+            width: 180px;
+            margin-right: 30px;
+        }
+
+        & #email, #phone {
+            width: 500px;
+        }
+    }
 }

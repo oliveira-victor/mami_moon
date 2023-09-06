@@ -29,23 +29,15 @@ tellMore.addEventListener('click', function() {
 
 // About tabs
 const tabBio = document.getElementById('tab-bio');
-const tabFunfacts = document.getElementById('tab-funfacts');
 const tabExpect = document.getElementById('tab-expect');
 
 const txtBio = document.querySelector('.txt-bio');
-const txtFunfacts = document.querySelector('.txt-funfacts');
 const txtExpect = document.querySelector('.txt-expect');
 
 tabBio.addEventListener('click', function() {
     resetTabs();
     this.classList.add('is-selected');
     txtBio.style.display = 'block';
-})
-
-tabFunfacts.addEventListener('click', function() {
-    resetTabs();
-    this.classList.add('is-selected');
-    txtFunfacts.style.display = 'block';
 })
 
 tabExpect.addEventListener('click', function() {
@@ -56,11 +48,9 @@ tabExpect.addEventListener('click', function() {
 
 const resetTabs = () => {
     tabBio.classList.remove('is-selected');
-    tabFunfacts.classList.remove('is-selected');
     tabExpect.classList.remove('is-selected');
 
     txtBio.style.display = 'none';
-    txtFunfacts.style.display = 'none';
     txtExpect.style.display = 'none';
 }
 
