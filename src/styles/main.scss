@@ -30,7 +30,7 @@ body {
 
 a {
     text-decoration: none;
-    color: variables.$mainColor;
+    color: variables.$secondaryColor;
 }
 
 p {
@@ -46,6 +46,12 @@ p {
 
 section {
     padding-top: 100px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid variables.$mainColor;
+    padding: 40px 0;
 }
 
 .main-button {
@@ -109,7 +115,7 @@ section {
     font-size: 46px;
     text-align: center;
     padding-bottom: 50px;
-    color: variables.$mainColor;
+    color: variables.$secondaryColor;
 }
 
 .parallax {

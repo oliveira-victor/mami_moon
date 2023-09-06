@@ -20,11 +20,11 @@
             padding: 0 16px;
 
             & .is-selected {
-                border-bottom: 2px solid variables.$secondaryColor;
+                border-bottom: 2px solid variables.$thirdColor;
             }
 
             &__tab {
-                color: variables.$secondaryColor;
+                color: variables.$thirdColor;
                 background-color: transparent;
                 font-size: 20px;
                 font-weight: bold;
@@ -63,6 +63,12 @@
                     line-height: 1.8;
                     list-style-type: disc;
                 }
+            }
+
+            & .loves {
+                font-weight: bold;
+                text-decoration: underline;
+                line-height: 1.8;
             }
 
             & .txt-expect {
