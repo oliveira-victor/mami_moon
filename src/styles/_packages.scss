@@ -122,4 +122,95 @@
             }
         }
     }
+
+    &__moreServices {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px 0;
+
+        &__item {
+            display: flex;
+            gap: 30px;
+
+            &__img {
+                display: flex;
+                justify-content: center;
+
+                & .yogaImg {
+                    width: 60px;
+                }
+
+                & .wombImg {
+                    width: 140px;
+
+                }
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+
+                & .txtSmall {
+                    font-size: 20px;
+                }
+
+                & .txtBig {
+                    font-size: 48px;
+                    font-weight: bold;
+                }
+
+                & a {
+                    font-size: 20px;
+                    margin-top: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            padding: 0;
+
+            &__item {
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                padding-bottom: 100px;
+                justify-content: space-between;
+
+                &__img {
+                    margin-bottom: 20px;
+
+                    & .yogaImg {
+                    }
+
+                    & .wombImg {
+
+                    }
+                }
+
+                &__content {
+
+                    & .txtSmall {
+                        font-size: 16px;
+                    }
+
+                    & .txtBig {
+                        font-size: 36px;
+                        font-weight: bold;
+                    }
+
+                    & a {
+                        font-size: 16px;
+                        margin-top: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
