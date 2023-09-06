@@ -436,19 +436,32 @@
             </section>
             <hr class="wrapper">
             <section id="contact" class="contact wrapper">
-                <h2 class="title">Contact</h2>
-                <form class="contact__form">
-                    <label for="name">Name (required)</label>
-                    <input type="text" id="first-name" name="name" placeholder="First name" required>
-                    <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
-                    <label for="email">Your e-mail (required)</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phone">Your phone number</label>
-                    <input type="email" id="email" name="email">
-                    <label for="message">Your message (required)</label>
-                    <textarea name="message" id="message" required></textarea>
-                    <button type="submit" id="submitBtn"></button>
-                </form>
+                <h2 class="title">Contact me</h2>
+                <div class="contact__container">
+                    <div class="contact__container__txt">
+                        <p>
+                            Let's talk about how I can help you throughout your Postpartum Journey.
+                        </p>
+                    </div>
+                    <form class="contact__container__form">
+                        <label for="first-name">Name <span class="required">(required)</span></label>
+                        <div class="name-container">
+                            <div>
+                                <input type="text" id="first-name" name="name" placeholder="First name" autocomplete="name" required>
+                            </div>
+                            <div>
+                                <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                            </div>
+                        </div>
+                        <label for="email">E-mail <span class="required">(required)</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email">
+                        <label for="tel">Phone number</label>
+                        <input type="tel" id="tel" name="tel" autocomplete="tel">
+                        <label for="message">Your message <span class="required">(required)</span></label>
+                        <textarea name="message" id="message" required></textarea>
+                        <button type="submit" id="submitBtn" class="main-button">Send</button>
+                    </form>
+                </div>
             </section>
             <div class="empty-space"></div>
         </main>
