@@ -144,3 +144,38 @@ hr {
 .empty-space {
     height: 110px;
 }
+
+// Shape divider
+.shape-divider {
+    position: relative;
+    background-color: #fff;
+    height: 158px;
+
+    .custom-shape-divider-top-1693964783 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1693964783 svg {
+        position: relative;
+        display: block;
+        width: calc(153% + 1.3px);
+        height: 158px;
+    }
+    
+    .custom-shape-divider-top-1693964783 .shape-fill {
+        fill: variables.$thirdColor;
+    }
+    
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        .custom-shape-divider-top-1693964783 svg {
+            width: calc(152% + 1.3px);
+            height: 64px;
+        }
+    }
+}
