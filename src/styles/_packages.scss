@@ -44,18 +44,10 @@
                 margin: 0 auto;
 
                 & .imgBg {
-                    background-color: #8080ff;
                     width: 200px;
                     height: 200px;
                     margin: 0 auto;
-                    border-radius: 50%;
                     position: relative;
-
-                    & .cloud {
-                        position: absolute;
-                        transform: translate(16%, 96%);
-                        width: 118px;
-                    }
 
                     & .moon {
                         position: absolute;
@@ -180,18 +172,11 @@
                 display: block;
                 width: 80%;
                 margin: 0 auto;
-                padding-bottom: 100px;
+                padding: 50px 0;
                 justify-content: space-between;
 
                 &__img {
                     margin-bottom: 20px;
-
-                    & .yogaImg {
-                    }
-
-                    & .wombImg {
-
-                    }
                 }
 
                 &__content {
