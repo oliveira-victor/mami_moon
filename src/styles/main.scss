@@ -116,7 +116,8 @@ hr {
 }
 
 .title {
-    font-size: 46px;
+    font-size: 54px;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     padding-bottom: 50px;
     color: variables.$secondaryColor;
@@ -147,7 +148,12 @@ hr {
 }
 
 .empty-space {
-    height: 110px;
+    display: none;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        height: 90px;
+    }
 }
 
 // Shape divider
