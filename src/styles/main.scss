@@ -38,7 +38,7 @@ p {
     max-width: 1000px;
     line-height: 1.8;
     margin: 0 auto;
-    padding:10px 0;
+    padding: 10px 0;
 
     @media screen and (max-width: 767px) {
         width: 90%;
@@ -130,12 +130,10 @@ hr {
     color: #fff;
     min-height: 40vh;
     background-color: variables.$mainColor;
-    background-image: url(../images/stars-bg.gif);
-    background-size: 150px;
-    background-attachment: fixed;
+    position: relative;
     display: flex;
     align-items: center;
-    text-shadow: 0px 2px 19px rgba(255,255,255,0.46);
+    text-shadow: 0px 2px 19px rgba(255, 255, 255, 0.46);
 
     & div {
         width: 90%;
@@ -146,6 +144,19 @@ hr {
         min-height: 30vh;
         padding: 0;
     }
+}
+
+.parallax::before {
+    content: "";
+    background-image: url(../images/stars-bg.gif);
+    background-size: 150px;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
 }
 
 .empty-space {
@@ -171,18 +182,18 @@ hr {
         overflow: hidden;
         line-height: 0;
     }
-    
+
     .custom-shape-divider-top-1693964783 svg {
         position: relative;
         display: block;
         width: calc(153% + 1.3px);
         height: 158px;
     }
-    
+
     .custom-shape-divider-top-1693964783 .shape-fill {
         fill: variables.$thirdColor;
     }
-    
+
     /** For mobile devices **/
     @media (max-width: 767px) {
         .custom-shape-divider-top-1693964783 svg {
