@@ -103,3 +103,30 @@ orangeMoonBtn.addEventListener('click', function() {
     orangeMoonBtn.style.display = 'none';
     orangePackageTxt.style.display = 'block';
 })
+
+// Selecting packages
+const selectPinkMoon = document.getElementById('selectPinkMoon');
+const selectOrangeMoon = document.getElementById('selectOrangeMoon');
+const selectYoga = document.getElementById('selectYoga');
+const selectRitual = document.getElementById('selectRitual');
+
+const checkboxPinkMoon = document.getElementById('pink-moon');
+const checkboxOrangeMoon = document.getElementById('orange-moon');
+const checkboxYoga = document.getElementById('yoga-class');
+const checkboxRitual = document.getElementById('mother-ritual');
+
+selectPinkMoon.addEventListener('click', function() {
+    checkboxPinkMoon.checked = true;
+})
+
+selectOrangeMoon.addEventListener('click', function() {
+    checkboxOrangeMoon.checked = true;
+})
+
+selectYoga.addEventListener('click', function() {
+    checkboxYoga.checked = true;
+})
+
+selectRitual.addEventListener('click', function() {
+    checkboxRitual.checked = true;
+})

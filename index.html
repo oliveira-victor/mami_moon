@@ -329,7 +329,7 @@
                                     <p class="pink">
                                         Investment - $1800
                                     </p>
-                                    <a href="#contact"><button class="card-button-pink">I'm interested</button></a>
+                                    <a href="#contact"><button class="card-button-pink" id="selectPinkMoon">I'm interested</button></a>
                                 </div>
                             </div>
                         </div>
@@ -360,7 +360,7 @@
                                     <p class="orange">
                                         Investment - $2200
                                     </p>
-                                    <a href="#contact"><button class="card-button-orange">I'm interested</button></a>
+                                    <a href="#contact"><button class="card-button-orange" id="selectOrangeMoon">I'm interested</button></a>
                                 </div>
                             </div>
                         </div>
@@ -375,7 +375,7 @@
                             <div class="packages__moreServices__item__content">
                                 <span class="txtSmall">Private Prenatal/Postnatal</span>
                                 <span class="txtBig">Yoga Class</span>
-                                <a href="#contact">Schedule a class</a>
+                                <a href="#contact" id="selectYoga">Schedule a class</a>
                             </div>
                         </div>
                         <div class="packages__moreServices__item">
@@ -385,7 +385,7 @@
                             <div class="packages__moreServices__item__content">
                                 <span class="txtSmall">Mother Blessing</span>
                                 <span class="txtBig">Ritual</span>
-                                <a href="#contact">Request this service</a>
+                                <a href="#contact" id="selectRitual">Request this service</a>
                             </div>
                         </div>
                     </div>
@@ -445,14 +445,14 @@
                 </div>
             </div>
             <section id="contact" class="contact">
-                <h2 class="title">Contact me</h2>
                 <div class="contact__container wrapper">
                     <div class="contact__container__txt">
-                        <p>
+                        <h2 class="title" data-aos="fade-up" data-aos-delay="40" data-aos-duration="500">Contact me</h2>
+                        <p data-aos="fade-up" data-aos-delay="70" data-aos-duration="1200">
                             Let's talk about how I can help you throughout your Postpartum Journey.
                         </p>
                     </div>
-                    <form class="contact__container__form">
+                    <form class="contact__container__form" action="https://formsubmit.co/ca81dbcd6bc2cb406ff808c5d297197f" method="POST">
                         <label for="first-name">Name <span class="required">(required)</span></label>
                         <div class="name-container">
                             <div>
@@ -470,36 +470,39 @@
                         <p>I'm insterested in:</p>
                         <div class="checkbox-container">
                             <ul>
-                                Packages:
+                                <b>Packages:</b>
                                 <li>
-                                    <input type="checkbox" id="pink-moon" name="pink-moon" value="Pink Moon">
+                                    <input type="checkbox" id="pink-moon" name="package1" value="Pink Moon">
                                     <label for="pink-moon">Pink Moon Package</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="orange-moon" name="orange-moon" value="orange Moon">
+                                    <input type="checkbox" id="orange-moon" name="package2" value="orange Moon">
                                     <label for="orange-moon">Orange Moon Package</label>
                                 </li>
                             </ul>
                             <ul>
-                                More services:
+                                <b>More services:</b>
                                 <li>
-                                    <input type="checkbox" id="yoga-class" name="yoga-class" value="Yoga Class">
+                                    <input type="checkbox" id="yoga-class" name="service1" value="Yoga Class">
                                     <label for="yoga-class">Yoga Class</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="mother-ritual" name="mother-ritual" value="Mother Ritual">
+                                    <input type="checkbox" id="mother-ritual" name="service2" value="Mother Ritual">
                                     <label for="mother-ritual">Mother Blessing Ritual</label>
                                 </li>
                             </ul>
                             <ul>
-                                Gift:
+                                <b>Gift:</b>
                                 <li>
-                                    <input type="checkbox" id="individual" name="individual" value="Individual Sessions">
+                                    <input type="checkbox" id="individual" name="gift" value="Individual Sessions">
                                     <label for="individual">Individual sessions</label>
                                 </li>
                             </ul>
                         </div>
                         <label for="message">Your message <span class="required">(required)</span></label>
+                        <input type="hidden" name="_next" value="https://vfostudio.vercel.app/sent.html">
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <input type="hidden" name="_autoresponse" value="Thank you for contacting VFO Studio! This is just to confirm that your message has been successfully sent. It will be read and you'll get a reply ASAP.">
                         <textarea name="message" id="message" required></textarea>
                         <button type="submit" id="submitBtn" class="submit-button">Send</button>
                     </form>

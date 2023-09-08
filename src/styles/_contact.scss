@@ -4,9 +4,17 @@
     padding: 140px 0;
     background-color: variables.$thirdColor;
 
+    & h2 {
+        text-align: left;
+    }
+
     @media screen and (max-width: 767px) {
         padding: 0;
         padding-top: 50px;
+
+        & h2 {
+            text-align: center;
+        }
     }
 
     &__container {
