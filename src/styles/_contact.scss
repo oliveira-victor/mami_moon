@@ -3,6 +3,8 @@
 .contact {
     padding: 140px 0;
     background-color: variables.$thirdColor;
+    background-image: url(../images/moonbg.svg);
+    background-size: cover;
 
     & h2 {
         text-align: left;
@@ -75,6 +77,7 @@
                 font-size: 16px;
                 border: none;
                 border-radius: 6px;
+                background-color: rgba($color: #fff, $alpha: 0.5);
 
                 &:focus {
                     outline-color: variables.$secondaryColor;
@@ -87,6 +90,7 @@
                 padding: 10px;
                 border: none;
                 border-radius: 6px;
+                background-color: rgba($color: #fff, $alpha: 0.5);
 
                 &:focus {
                     outline-color: variables.$secondaryColor;
@@ -140,7 +144,8 @@
             & .submit-button {
                 width: 30%;
                 height: 60px;
-                font-size: 26px;
+                font-size: 20px;
+                text-transform: uppercase;
                 border: none;
                 border-radius: 6px;
                 display: block;
@@ -157,6 +162,7 @@
                 &:hover {
                     transform: translateY(-5px);
                     box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.3);
+                    background-color: lighten(variables.$secondaryColor, 10%);
                 }
             }
         }

@@ -110,23 +110,24 @@ const selectOrangeMoon = document.getElementById('selectOrangeMoon');
 const selectYoga = document.getElementById('selectYoga');
 const selectRitual = document.getElementById('selectRitual');
 
-const checkboxPinkMoon = document.getElementById('pink-moon');
-const checkboxOrangeMoon = document.getElementById('orange-moon');
-const checkboxYoga = document.getElementById('yoga-class');
-const checkboxRitual = document.getElementById('mother-ritual');
-
 selectPinkMoon.addEventListener('click', function() {
-    checkboxPinkMoon.checked = true;
+    document.getElementById('pink-moon').checked = true;
 })
 
 selectOrangeMoon.addEventListener('click', function() {
-    checkboxOrangeMoon.checked = true;
+    document.getElementById('orange-moon').checked = true;
 })
 
 selectYoga.addEventListener('click', function() {
-    checkboxYoga.checked = true;
+    document.getElementById('yoga-class').checked = true;
 })
 
 selectRitual.addEventListener('click', function() {
-    checkboxRitual.checked = true;
+    document.getElementById('mother-ritual').checked = true;
 })
+
+// Footer year
+const d = new Date();
+let year = d.getFullYear();
+
+document.getElementById('year').innerHTML = year;
