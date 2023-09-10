@@ -23,6 +23,7 @@
 
         @media screen and (max-width: 767px) {
             display: block;
+            padding-bottom: 0;
         }
 
         &__card {
@@ -119,13 +120,21 @@
         width: 50%;
         margin: 0 auto;
         margin-bottom: 100px;
-        padding: 26px;
-        border-radius: 10px;
         display: flex;
         gap: 50px;
 
+        @media screen and (max-width: 767px) {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
         & img {
             width: 150px;
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
         }
 
         & .individualSession-title {
