@@ -109,7 +109,7 @@ const selectPinkMoon = document.getElementById('selectPinkMoon');
 const selectOrangeMoon = document.getElementById('selectOrangeMoon');
 const selectIndividualSession = document.getElementById('individualSessionLink');
 const selectYoga = document.getElementById('selectYoga');
-const selectRitual = document.getElementById('selectRitual');
+const selectCeremony = document.getElementById('selectCeremony');
 
 selectPinkMoon.addEventListener('click', function() {
     document.getElementById('pink-moon').checked = true;
@@ -127,8 +127,8 @@ selectYoga.addEventListener('click', function() {
     document.getElementById('yoga-class').checked = true;
 })
 
-selectRitual.addEventListener('click', function() {
-    document.getElementById('mother-ritual').checked = true;
+selectCeremony.addEventListener('click', function() {
+    document.getElementById('mother-ceremony').checked = true;
 })
 
 // Yoga and ceremony info

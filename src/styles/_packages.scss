@@ -229,6 +229,10 @@
                 }
 
                 &__content {
+                    & #showYoga, #showCeremony{
+                        display: block;
+                        text-align: center;
+                    }
 
                     & .txtSmall {
                         font-size: 16px;
