@@ -115,6 +115,32 @@
         }
     }
 
+    &__individualSessions {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        padding: 26px;
+        border-radius: 10px;
+        display: flex;
+        gap: 50px;
+
+        & img {
+            width: 150px;
+        }
+
+        & .individualSession-title {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        & a {
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
     &__moreServices {
         display: flex;
         justify-content: space-around;

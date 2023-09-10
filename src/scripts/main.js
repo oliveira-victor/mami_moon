@@ -107,6 +107,7 @@ orangeMoonBtn.addEventListener('click', function() {
 // Selecting packages
 const selectPinkMoon = document.getElementById('selectPinkMoon');
 const selectOrangeMoon = document.getElementById('selectOrangeMoon');
+const selectIndividualSession = document.getElementById('individualSessionLink');
 const selectYoga = document.getElementById('selectYoga');
 const selectRitual = document.getElementById('selectRitual');
 
@@ -116,6 +117,10 @@ selectPinkMoon.addEventListener('click', function() {
 
 selectOrangeMoon.addEventListener('click', function() {
     document.getElementById('orange-moon').checked = true;
+})
+
+selectIndividualSession.addEventListener('click', function() {
+    document.getElementById('individual').checked = true;
 })
 
 selectYoga.addEventListener('click', function() {
