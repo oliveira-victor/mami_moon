@@ -218,10 +218,11 @@
 
             &__item {
                 display: block;
-                width: 80%;
+                width: 100%;
                 margin: 0 auto;
                 padding: 50px 0;
                 justify-content: space-between;
+                text-align: center;
 
                 &__img {
                     margin-bottom: 20px;
@@ -241,6 +242,10 @@
                     & a {
                         font-size: 16px;
                         margin-top: 18px;
+                    }
+
+                    & p {
+                        text-align: left;
                     }
                 }
             }
