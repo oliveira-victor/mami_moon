@@ -131,6 +131,20 @@ selectRitual.addEventListener('click', function() {
     document.getElementById('mother-ritual').checked = true;
 })
 
+// Yoga and ceremony info
+const showYoga = document.getElementById('showYoga');
+const showCeremony = document.getElementById('showCeremony');
+
+showYoga.addEventListener('click', function() {
+    document.querySelector('.yoga-description').style.display = 'block';
+    showYoga.style.display = 'none';
+})
+
+showCeremony.addEventListener('click', function() {
+    document.querySelector('.ceremony-description').style.display = 'block';
+    showCeremony.style.display = 'none';
+})
+
 // Footer year
 const d = new Date();
 let year = d.getFullYear();

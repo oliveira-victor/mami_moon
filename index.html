@@ -8,7 +8,8 @@
     <link rel="icon" type="image/svg+xml" href="/favico.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -318,7 +319,7 @@
                                             6 visits on the first 4 weeks of postpartum;
                                         </li>
                                         <li>
-                                            4 postpartum nurturing yoga sessions;
+                                            4 postpartum restorative yoga sessions;
                                         </li>
                                         <li>
                                             A wellness Mami Moon basket (including wellness products for new mom and
@@ -326,9 +327,10 @@
                                         </li>
                                     </ul>
                                     <p class="pink">
-                                        Investment - $1800
+                                        Investment - $1500
                                     </p>
-                                    <a href="#contact"><button class="card-button-pink" id="selectPinkMoon">I'm interested</button></a>
+                                    <a href="#contact"><button class="card-button-pink" id="selectPinkMoon">I'm
+                                            interested</button></a>
                                 </div>
                             </div>
                         </div>
@@ -349,7 +351,7 @@
                                             8 visits on the first 8 weeks of postpartum;
                                         </li>
                                         <li>
-                                            6 Postpartum nurturing yoga sessions;
+                                            6 Postpartum restorative yoga sessions;
                                         </li>
                                         <li>
                                             A wellness Mami Moon basket (including wellness products for new mom and
@@ -359,7 +361,8 @@
                                     <p class="orange">
                                         Investment - $2200
                                     </p>
-                                    <a href="#contact"><button class="card-button-orange" id="selectOrangeMoon">I'm interested</button></a>
+                                    <a href="#contact"><button class="card-button-orange" id="selectOrangeMoon">I'm
+                                            interested</button></a>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +374,8 @@
                                 Individual session
                             </span>
                             <p>
-                                This individual session is perfect if you want to offer a gift for a sister, coworker or family member who just had a baby. Includes a 3 hour visit and a mindful class.
+                                This individual session is perfect if you want to offer a gift for a sister, coworker or
+                                family member who just had a baby. Includes a 3 hour visit and a mindful class.
                             </p>
                             <a href="#contact" id="individualSessionLink" class="bold">
                                 I'm insterested
@@ -388,7 +392,18 @@
                             <div class="packages__moreServices__item__content">
                                 <span class="txtSmall">Private Prenatal/Postnatal</span>
                                 <span class="txtBig">Yoga Class</span>
-                                <a href="#contact" id="selectYoga" class="bold">Schedule a class</a>
+                                <p><span id="showYoga">Learn more</span></p>
+                                <div class="yoga-description fade-in">
+                                    <p>
+                                        Prenatal yoga classes are designed to balance your nervous system and bring
+                                        peace and calm to your mind-body, spirit and Baby! You are going to learn
+                                        breathing techniques and pelvic floor coordinations to prepare for birth, and
+                                        create space for your baby to grow with safe yoga poses. This class is a perfect
+                                        blend of relaxation techniques so you can prepare for the transformative journey
+                                        of pregnancy, childbirth and parenthood.
+                                    </p>
+                                    <a href="#contact" id="selectYoga" class="bold">Schedule a class</a>
+                                </div>
                             </div>
                         </div>
                         <div class="packages__moreServices__item">
@@ -397,8 +412,14 @@
                             </div>
                             <div class="packages__moreServices__item__content">
                                 <span class="txtSmall">Mother Blessing</span>
-                                <span class="txtBig">Ritual</span>
-                                <a href="#contact" id="selectRitual" class="bold">Request this service</a>
+                                <span class="txtBig">Ceremony</span>
+                                <p><span id="showCeremony">Learn more</span></p>
+                                <div class="ceremony-description fade-in">
+                                    <p>
+                                        This is a intimate and intentional ceremony.
+                                    </p>
+                                    <a href="#contact" id="selectRitual" class="bold">I'm interested</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -465,7 +486,8 @@
                             Let's talk about how I can help you throughout your Postpartum Journey.
                         </p>
                     </div>
-                    <form class="contact__container__form" action="https://formsubmit.co/ca81dbcd6bc2cb406ff808c5d297197f" method="POST">
+                    <form class="contact__container__form"
+                        action="https://formsubmit.co/ca81dbcd6bc2cb406ff808c5d297197f" method="POST">
                         <label for="first-name">Name <span class="required">(required)</span></label>
                         <div class="name-container">
                             <div>
@@ -515,7 +537,8 @@
                         <label for="message">Your message <span class="required">(required)</span></label>
                         <input type="hidden" name="_next" value="https://mamimoon.vercel.app/sent.html">
                         <input type="hidden" name="_subject" value="New submission!">
-                        <input type="hidden" name="_autoresponse" value="Thank you for contacting VFO Studio! This is just to confirm that your message has been successfully sent. It will be read and you'll get a reply ASAP.">
+                        <input type="hidden" name="_autoresponse"
+                            value="Thank you for contacting VFO Studio! This is just to confirm that your message has been successfully sent. It will be read and you'll get a reply ASAP.">
                         <textarea name="message" id="message" required></textarea>
                         <button type="submit" id="submitBtn" class="submit-button">Send message</button>
                     </form>

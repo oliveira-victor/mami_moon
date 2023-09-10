@@ -157,11 +157,11 @@
 
         &__item {
             display: flex;
-            gap: 30px;
+            gap: 20px;
+            width: 500px;
+            height: fit-content;
 
             &__img {
-                display: flex;
-                justify-content: center;
 
                 & .yogaImg {
                     width: 60px;
@@ -176,8 +176,6 @@
             &__content {
                 display: flex;
                 flex-direction: column;
-                text-align: center;
-                justify-content: center;
 
                 & .txtSmall {
                     font-size: 20px;
@@ -186,6 +184,21 @@
                 & .txtBig {
                     font-size: 48px;
                     font-weight: bold;
+                }
+
+                & #showYoga, #showCeremony {
+                    cursor: pointer;
+                    color: variables.$secondaryColor;
+                    font-size: 18px;
+                    font-weight: bold;
+            
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                & .yoga-description, .ceremony-description {
+                    display: none;
                 }
 
                 & a {
