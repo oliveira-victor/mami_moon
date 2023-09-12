@@ -27,7 +27,7 @@
         }
 
         &__card {
-            background-color: #fff;
+            background-color: variables.$neutralColor;
             width: 400px;
             height: fit-content;
             margin: 0 auto;
@@ -76,7 +76,7 @@
                     background-color: variables.$pinkMoon;
 
                     &:hover {
-                        background-color: lighten(variables.$pinkMoon, 10%);
+                        background-color: lighten(variables.$pinkMoon, 5%);
                         transform: translateY(-7px);
                     }
                 }
@@ -86,7 +86,7 @@
                     background-color: variables.$orangeMoon;
 
                     &:hover {
-                        background-color: lighten(variables.$orangeMoon, 10%);
+                        background-color: lighten(variables.$orangeMoon, 5%);
                         transform: translateY(-7px);
                     }
                 }

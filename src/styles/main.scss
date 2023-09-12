@@ -22,6 +22,7 @@ html {
 }
 
 body {
+    background-color: variables.$neutralColor;
     font-size: 18px;
     font-family: 'Comfortaa', cursive;
 
@@ -172,7 +173,7 @@ hr {
 // Shape divider
 .shape-divider {
     position: relative;
-    background-color: #fff;
+    background-color: variables.$neutralColor;
     height: 158px;
 
     .custom-shape-divider-top-1693964783 {

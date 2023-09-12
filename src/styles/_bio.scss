@@ -20,11 +20,11 @@
             padding: 0 16px;
 
             & .is-selected {
-                border-bottom: 2px solid variables.$thirdColor;
+                border-bottom: 2px solid variables.$forthColor;
             }
 
             &__tab {
-                color: variables.$thirdColor;
+                color: variables.$forthColor;
                 background-color: transparent;
                 font-size: 20px;
                 font-weight: bold;

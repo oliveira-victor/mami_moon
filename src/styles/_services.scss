@@ -27,7 +27,7 @@
                 }
 
                 &__question {
-                    background-color: #fff;
+                    background-color: variables.$neutralColor;
                     color: variables.$mainColor;
                     padding: 26px;
                     position: relative;
@@ -48,7 +48,7 @@
                 }
 
                 &__answer {
-                    background-color: #fff;
+                    background-color: variables.$neutralColor;
                     height: 0;
                     overflow: hidden;
                     padding: 0 26px;
