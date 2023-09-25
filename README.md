@@ -1,4 +1,4 @@
-# Getting Started with Vite
+# Getting Started with Gulp
 
 This project was bootstrapped with [Gulp](https://gulpjs.com/).
 
