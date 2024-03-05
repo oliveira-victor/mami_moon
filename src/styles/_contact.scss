@@ -29,9 +29,32 @@
         }
 
         &__txt {
-            font-size: 32px;
             color: variables.$secondaryColor;
-            padding: 26px 0;
+
+            & p {
+                font-size: 32px;
+                padding: 26px 0;
+            }
+
+            & .contact-balloon {
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                border-radius: 6px;
+                margin: 30px 20px;
+                padding: 20px 34px;
+                font-size: 22px;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & img {
+                    height: 64px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
 
             @media screen and (max-width: 767px) {
                 text-align: center;
@@ -114,7 +137,7 @@
                 }
 
                 & ul {
-                    
+
                     & li {
                         padding-top: 6px;
 
