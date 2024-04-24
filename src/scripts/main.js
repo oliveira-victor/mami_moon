@@ -24,7 +24,6 @@ const extraInfo = document.querySelector('.extra-info');
 tellMore.addEventListener('click', function() {
     tellMore.style.display = 'none';
     extraInfo.style.display = 'block';
-    extraInfo.classList.add('fade-in')
 })
 
 // About tabs
@@ -143,6 +142,13 @@ showYoga.addEventListener('click', function() {
 showCeremony.addEventListener('click', function() {
     document.querySelector('.ceremony-description').style.display = 'block';
     showCeremony.style.display = 'none';
+})
+
+// Submit btn
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', function() {
+    submitBtn.innerText = 'Sending...'
 })
 
 // Footer year
