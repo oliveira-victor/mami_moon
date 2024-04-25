@@ -10,6 +10,11 @@
         grid-template-columns: 30% auto;
         gap: 50px;
 
+        &__imgContainer {
+            display: flex;
+            align-items: center;
+        }
+
         &__jacque {
             width: 100%;
             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
@@ -50,7 +55,16 @@
         &__text {
             padding: 26px;
 
-            & .txt-bio {
+            & h3 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+
+            & .bio-subtitle {
+                font-size: 16px;
+            }
+
+            & .txt-expect {
                 display: none;
             }
         }

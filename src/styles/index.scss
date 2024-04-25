@@ -91,15 +91,20 @@ hr {
 }
 
 .quote-big {
+    text-align: center;
     font-size: 64px;
 
     @media screen and (max-width: 767px) {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 }
 
 .justify-right {
     text-align: right;
+
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+    }
 }
 
 .container {
@@ -139,6 +144,10 @@ hr {
     & div {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (max-width: 767px) {
+            width: 98%;
+        }
     }
 
     @media screen and (max-width: 767px) {

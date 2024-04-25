@@ -12,6 +12,14 @@
     100% { opacity: 1; }
 }
 
+.late-fade-in { animation: lateFadeIn 3s; }
+
+@keyframes lateFadeIn {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .rotate {
     transform: rotate(-4deg);
 }
