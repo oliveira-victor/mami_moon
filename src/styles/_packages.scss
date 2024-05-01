@@ -15,174 +15,51 @@
 
 .packages {
 
-    &__cardsWrapper {
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-        padding-bottom: 160px;
-
-        @media screen and (max-width: 767px) {
-            display: block;
-            padding-bottom: 0;
-        }
-
-        &__card {
-            background-color: variables.$cardColor;
-            width: 400px;
-            height: fit-content;
-            margin: 0 auto;
-            padding: 28px 0;
-            border-radius: 10px;
-            box-shadow: 0px 10px 15px rgba($color: #000000, $alpha: 0.3);
-
-            @media screen and (max-width: 767px) {
-                margin-bottom: 60px;
-                width: 90%;
-            }
-
-            &__container {
-                width: 90%;
-                margin: 0 auto;
-
-                & .imgBg {
-                    width: 200px;
-                    height: 200px;
-                    margin: 0 auto;
-                    position: relative;
-
-                    & .moon {
-                        position: absolute;
-                        transform: translate(24%, 20%);
-                        width: 140px;
-                    }
-                }
-
-                & .card-title {
-                    padding: 24px 0;
-                    text-align: center;
-                    font-size: 38px;
-                }
-
-                & .pink {
-                    color: variables.$pinkMoon;
-                }
-
-                & .orange {
-                    color: variables.$orangeMoon;
-                }
-
-                & .card-button-pink {
-                    @include cardButton();
-                    background-color: variables.$pinkMoon;
-
-                    &:hover {
-                        background-color: lighten(variables.$pinkMoon, 5%);
-                        transform: translateY(-7px);
-                    }
-                }
-
-                & .card-button-orange {
-                    @include cardButton();
-                    background-color: variables.$orangeMoon;
-
-                    &:hover {
-                        background-color: lighten(variables.$orangeMoon, 5%);
-                        transform: translateY(-7px);
-                    }
-                }
-
-                & .included {
-                    display: none;
-                    width: 90%;
-                    margin: 0 auto;
-
-                    & h3 {
-                        text-align: center;
-                        padding-bottom: 14px;
-                    }
-
-                    & li {
-                        margin-bottom: 20px;
-                        line-height: 1.8;
-                    }
-
-                    & p {
-                        text-align: center;
-                        font-weight: bold;
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-    }
-
-    &__individualSessions {
-        width: 50%;
-        margin: 0 auto;
-        margin-bottom: 100px;
-        display: flex;
-        gap: 50px;
-
-        @media screen and (max-width: 767px) {
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
-
-        & img {
-            width: 150px;
-
-            @media screen and (max-width: 767px) {
-                margin-bottom: 20px;
-            }
-        }
-
-        & .individualSession-title {
-            font-size: 26px;
-            font-weight: bold;
-        }
-
-        & a {
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
     &__moreServices {
         display: flex;
+        gap: 26px;
+        flex-wrap: wrap;
         justify-content: space-around;
-        padding: 100px 0;
+        padding: 100px 10px;
 
         &__item {
+            width: 260px;
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             gap: 20px;
-            width: 500px;
-            height: fit-content;
+            text-align: center;
+            padding: 20px;
+            background-color: variables.$neutralColor;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all .2s ease;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
             &__img {
+                /* background-color: red; */
+                height: 260px;
 
-                & .yogaImg {
-                    width: 60px;
-                }
-
-                & .wombImg {
-                    width: 140px;
-
+                img {
+                    /* height: 100%; */
+                    height: 260px;
+                    width: 100%;
+                    object-fit: contain;
                 }
             }
 
             &__content {
+                /* background-color: blue; */
                 display: flex;
                 flex-direction: column;
 
                 & .txtSmall {
-                    font-size: 20px;
+                    font-size: 16px;
+                    font-weight: lighter;
                 }
 
                 & .txtBig {
-                    font-size: 48px;
+                    font-size: 28px;
                     font-weight: bold;
                 }
 
@@ -213,46 +90,7 @@
         }
 
         @media screen and (max-width: 767px) {
-            display: block;
-            padding: 0;
-
-            &__item {
-                display: block;
-                width: 100%;
-                margin: 0 auto;
-                padding: 50px 0;
-                justify-content: space-between;
-                text-align: center;
-
-                &__img {
-                    margin-bottom: 20px;
-                }
-
-                &__content {
-                    & #showYoga, #showCeremony{
-                        display: block;
-                        text-align: center;
-                    }
-
-                    & .txtSmall {
-                        font-size: 16px;
-                    }
-
-                    & .txtBig {
-                        font-size: 36px;
-                        font-weight: bold;
-                    }
-
-                    & a {
-                        font-size: 16px;
-                        margin-top: 18px;
-                    }
-
-                    & p {
-                        text-align: left;
-                    }
-                }
-            }
+            justify-content: center;
         }
     }
 }

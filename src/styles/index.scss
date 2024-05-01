@@ -5,6 +5,7 @@
 @use 'welcome';
 @use 'bio';
 @use 'services';
+@use 'modal';
 @use 'packages';
 @use 'contact';
 @use 'footer';
@@ -132,6 +133,7 @@ hr {
 }
 
 .parallax {
+    min-height: 356px;
     padding: 60px 0;
     font-family: 'Dancing Script', cursive;
     color: #fff;
@@ -167,6 +169,12 @@ hr {
     bottom: 0px;
     left: 0px;
     opacity: 0.6;
+}
+
+.secondBanner::before {
+    background-image: url(../images/pregnant-banner.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .empty-space {

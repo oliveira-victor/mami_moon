@@ -86,70 +86,29 @@ function showOrHide(element) {
     parentElement.classList.toggle(toggleClass);
 }
 
-// Package cards
-const pinkMoonBtn = document.getElementById('card-button-pink');
-const pinkPackageTxt = document.getElementById('included-pink');
+// Modal
 
-const orangeMoonBtn = document.getElementById('card-button-orange');
-const orangePackageTxt = document.getElementById('included-orange');
+const modal = document.getElementById('modal');
 
-pinkMoonBtn.addEventListener('click', function() {
-    pinkMoonBtn.style.display = 'none';
-    pinkPackageTxt.style.display = 'block';
-})
+const care = document.getElementById('care');
+const yoga = document.getElementById('yoga');
+const ceremony = document.getElementById('ceremony');
+const photography = document.getElementById('photography');
 
-orangeMoonBtn.addEventListener('click', function() {
-    orangeMoonBtn.style.display = 'none';
-    orangePackageTxt.style.display = 'block';
-})
+function openModal(e) {
+    modal.classList.add('showModal');
 
-// Selecting packages
-const selectPinkMoon = document.getElementById('selectPinkMoon');
-const selectOrangeMoon = document.getElementById('selectOrangeMoon');
-const selectIndividualSession = document.getElementById('individualSessionLink');
-const selectYoga = document.getElementById('selectYoga');
-const selectCeremony = document.getElementById('selectCeremony');
+    e.classList.remove('hide');
+}
 
-selectPinkMoon.addEventListener('click', function() {
-    document.getElementById('pink-moon').checked = true;
-})
+function closeModal() {
+    modal.classList.remove('showModal');
 
-selectOrangeMoon.addEventListener('click', function() {
-    document.getElementById('orange-moon').checked = true;
-})
-
-selectIndividualSession.addEventListener('click', function() {
-    document.getElementById('individual').checked = true;
-})
-
-selectYoga.addEventListener('click', function() {
-    document.getElementById('yoga-class').checked = true;
-})
-
-selectCeremony.addEventListener('click', function() {
-    document.getElementById('mother-ceremony').checked = true;
-})
-
-// Yoga and ceremony info
-const showYoga = document.getElementById('showYoga');
-const showCeremony = document.getElementById('showCeremony');
-
-showYoga.addEventListener('click', function() {
-    document.querySelector('.yoga-description').style.display = 'block';
-    showYoga.style.display = 'none';
-})
-
-showCeremony.addEventListener('click', function() {
-    document.querySelector('.ceremony-description').style.display = 'block';
-    showCeremony.style.display = 'none';
-})
-
-// Submit btn
-const submitBtn = document.getElementById('submitBtn');
-
-submitBtn.addEventListener('click', function() {
-    submitBtn.innerText = 'Sending...'
-})
+    care.classList.add('hide');
+    yoga.classList.add('hide');
+    ceremony.classList.add('hide');
+    photography.classList.add('hide');
+}
 
 // Footer year
 const d = new Date();
