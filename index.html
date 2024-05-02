@@ -330,15 +330,40 @@
                             </div>
                             <div id="yoga" class="package-container">
                                 <div class="modal__container__title">
-                                    <h2>Prenatal & Postnatal Yoga</h2>
+                                    <h2> Yoga</h2>
                                     <img src="./dist/images/close.svg" class="close-btn" alt="Close icon"
                                         onclick="closeModal()">
                                 </div>
+                                <div class="modal__container__tabs">
+                                    <button id="tab1" class="modal-tab selected-tab" type="button"
+                                        onclick="switchTabs(tab1, 1)">
+                                        Prenatal Yoga
+                                    </button>
+                                    <button id="tab2" class="modal-tab" type="button" onclick="switchTabs(tab2, 2)">
+                                        Postnatal Yoga
+                                    </button>
+                                </div>
                                 <div class="modal__container__main">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae
-                                    consequuntur! Nisi adipisci iusto maiores, non dolorum, quibusdam quidem aliquid
-                                    perferendis quos inventore vero nostrum excepturi laudantium, itaque temporibus
-                                    nesciunt?
+                                    <div id="modal-page1" class="modal-page showPage">
+                                        <p>
+                                            Designed for new moms, this class offers a restorative space to release and
+                                            restore, all while strengthening and preparing your body for the journey
+                                            ahead. We infuse elements of dance into our practice to make it not just
+                                            beneficial but also exciting and fun! Our classes are tailored to the
+                                            specific needs of expectant and new mothers, emphasizing holistic health
+                                            through somatic movements, meditation, and mindfulness. Join us and
+                                            experience the joy of prenatal yoga!
+                                        </p>
+                                    </div>
+                                    <div id="modal-page2" class="modal-page">
+                                        <p>
+                                            The first half focuses on core and pelvic muscles with a gentle vinyasa,
+                                            perfect for beginners and postpartum moms. The second half includes
+                                            restorative poses for deep relaxation, with variations to suit all levels.
+                                            Whether you're new to yoga or experienced, this class is designed to support
+                                            your recovery from childbirth, build strength, and reduce stress.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="modal__container__bottom">
                                     <a href="#contact" onclick="closeModal()">Schedule a Private Session</a>

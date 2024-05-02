@@ -110,6 +110,27 @@ function closeModal() {
     photography.classList.remove('showContent');
 }
 
+const tab1 = document.getElementById('tab1');
+const tab2 = document.getElementById('tab2');
+
+const modalPage1 = document.getElementById('modal-page1');
+const modalPage2 = document.getElementById('modal-page2');
+
+function switchTabs(e, page) {
+    tab1.classList.remove('selected-tab');
+    tab2.classList.remove('selected-tab');
+
+    e.classList.add('selected-tab');
+
+    if (page === 1) {
+        modalPage2.classList.remove('showPage');
+        modalPage1.classList.add('showPage');
+    } else if (page === 2) {
+        modalPage1.classList.remove('showPage');
+        modalPage2.classList.add('showPage');
+    }
+}
+
 // Footer year
 const d = new Date();
 let year = d.getFullYear();
