@@ -307,52 +307,85 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="packages">
                     <div id="modal" class="modal fast-fade-in">
                         <div class="modal__overlay" onclick="closeModal()"></div>
                         <div class="modal__container">
-                            <div id="care" class="care-package hide">
-                                <div class="modal-title">
+                            <div id="care" class="package-container">
+                                <div class="modal__container__title">
                                     <h2>Postpartum Care</h2>
                                     <img src="./dist/images/close.svg" class="close-btn" alt="Close icon"
                                         onclick="closeModal()">
                                 </div>
+                                <div class="modal__container__main">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae
+                                    consequuntur! Nisi adipisci iusto maiores, non dolorum, quibusdam quidem aliquid
+                                    perferendis quos inventore vero nostrum excepturi laudantium, itaque temporibus
+                                    nesciunt?
+                                </div>
+                                <div class="modal__container__bottom">
+                                    <a href="#contact" onclick="closeModal()">I’m Interested</a>
+                                </div>
                             </div>
-                            <div id="yoga" class="yoga-package hide">
-                                <div class="modal-title">
+                            <div id="yoga" class="package-container">
+                                <div class="modal__container__title">
                                     <h2>Prenatal & Postnatal Yoga</h2>
                                     <img src="./dist/images/close.svg" class="close-btn" alt="Close icon"
                                         onclick="closeModal()">
                                 </div>
+                                <div class="modal__container__main">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae
+                                    consequuntur! Nisi adipisci iusto maiores, non dolorum, quibusdam quidem aliquid
+                                    perferendis quos inventore vero nostrum excepturi laudantium, itaque temporibus
+                                    nesciunt?
+                                </div>
+                                <div class="modal__container__bottom">
+                                    <a href="#contact" onclick="closeModal()">Schedule a Private Session</a>
+                                </div>
                             </div>
-                            <div id="ceremony" class="ceremony-package hide">
-                                <div class="modal-title">
+                            <div id="ceremony" class="package-container">
+                                <div class="modal__container__title">
                                     <h2>Mother Blessing Ceremony</h2>
                                     <img src="./dist/images/close.svg" class="close-btn" alt="Close icon"
                                         onclick="closeModal()">
                                 </div>
-                                <p>
-                                    A mother's blessing is a heartfelt gathering inspired by the ancient Navajo
-                                    ceremony
-                                    known as a Blessing Way. This special event is a beautiful way to prepare an
-                                    expectant mother for her upcoming birth journey, surrounding her with love,
-                                    support,
-                                    and encouragement.
-                                </p>
-                                <p>
-                                    In many cultures, birth is viewed as a powerful rite of passage for women, and a
-                                    mother's blessing is designed to help a woman feel mentally, physically, and
-                                    emotionally ready for childbirth. While honoring the traditions of the Navajo
-                                    blessing way, a Mother's Blessing offers a modern twist, providing moms-to-be
-                                    with a
-                                    similar sense of support and honor during this sacred time.
-                                </p>
+                                <div class="modal__container__main">
+                                    <p>
+                                        A mother's blessing is a heartfelt gathering inspired by the ancient Navajo
+                                        ceremony
+                                        known as a Blessing Way. This special event is a beautiful way to prepare an
+                                        expectant mother for her upcoming birth journey, surrounding her with love,
+                                        support,
+                                        and encouragement.
+                                    </p>
+                                    <p>
+                                        In many cultures, birth is viewed as a powerful rite of passage for women, and a
+                                        mother's blessing is designed to help a woman feel mentally, physically, and
+                                        emotionally ready for childbirth. While honoring the traditions of the Navajo
+                                        blessing way, a Mother's Blessing offers a modern twist, providing moms-to-be
+                                        with a
+                                        similar sense of support and honor during this sacred time.
+                                    </p>
+                                </div>
+                                <div class="modal__container__bottom">
+                                    <a href="#contact" onclick="closeModal()">I’m Interested</a>
+                                </div>
                             </div>
-                            <div id="photography" class="photography-package hide">
-                                <div class="modal-title">
+                            <div id="photography" class="package-container">
+                                <div class="modal__container__title">
                                     <h2>Photography</h2>
                                     <img src="./dist/images/close.svg" class="close-btn" alt="Close icon"
                                         onclick="closeModal()">
+                                </div>
+                                <div class="modal__container__main">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae
+                                    consequuntur! Nisi adipisci iusto maiores, non dolorum, quibusdam quidem aliquid
+                                    perferendis quos inventore vero nostrum excepturi laudantium, itaque temporibus
+                                    nesciunt?
+                                </div>
+                                <div class="modal__container__bottom">
+                                    <a href="#contact" onclick="closeModal()">I’m Interested</a>
                                 </div>
                             </div>
                         </div>
@@ -455,6 +488,7 @@
                         </div>
                     </div>
                 </div>
+
             </section>
             <div class="shape-divider">
                 <div class="custom-shape-divider-top-1693964783">
@@ -537,8 +571,7 @@
                             </div>
                         </a>
                     </div>
-                    <form class="contact__container__form" action="send_email.php"
-                        method="POST">
+                    <form class="contact__container__form" action="send_email.php" method="POST">
                         <label for="first-name">Name <span class="required">(required)</span></label>
                         <input type="text" id="first-name" name="name" autocomplete="name" required>
                         <label for="email">E-mail <span class="required">(required)</span></label>

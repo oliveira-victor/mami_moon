@@ -98,16 +98,16 @@ const photography = document.getElementById('photography');
 function openModal(e) {
     modal.classList.add('showModal');
 
-    e.classList.remove('hide');
+    e.classList.add('showContent');
 }
 
 function closeModal() {
     modal.classList.remove('showModal');
 
-    care.classList.add('hide');
-    yoga.classList.add('hide');
-    ceremony.classList.add('hide');
-    photography.classList.add('hide');
+    care.classList.remove('showContent');
+    yoga.classList.remove('showContent');
+    ceremony.classList.remove('showContent');
+    photography.classList.remove('showContent');
 }
 
 // Footer year

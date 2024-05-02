@@ -29,13 +29,27 @@
         padding: 30px;
         border-radius: 6px;
 
-        .modal-title {
+        &__title {
             display: flex;
             gap: 10px;
             justify-content: space-between;
+            align-items: baseline;
 
             .close-btn {
                 width: 24px;
+                cursor: pointer;
+            }
+        }
+
+        &__main {
+            flex-grow: 2;
+            overflow-y: auto;
+        }
+
+        &__bottom {
+            text-align: center;
+
+            button {
                 cursor: pointer;
             }
         }
@@ -47,13 +61,20 @@
                 font-size: 14px;
             }
         }
+
+        .package-container {
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .showContent {
+            display: flex;
+        }
     }
 }
 
 .showModal {
     display: flex;
-}
-
-.hide {
-    display: none;
 }
