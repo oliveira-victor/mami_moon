@@ -23,6 +23,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="dist/css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./dist/css/lightbox.css">
 </head>
 
 <body>
@@ -344,7 +345,7 @@
                                     </button>
                                 </div>
                                 <div class="modal__container__main">
-                                    <div id="modal-page1" class="modal-page showPage">
+                                    <div id="modal-page1" class="modal-page fade-in showPage">
                                         <p>
                                             Designed for new moms, this class offers a restorative space to release and
                                             restore, all while strengthening and preparing your body for the journey
@@ -355,7 +356,7 @@
                                             experience the joy of prenatal yoga!
                                         </p>
                                     </div>
-                                    <div id="modal-page2" class="modal-page">
+                                    <div id="modal-page2" class="modal-page fade-in">
                                         <p>
                                             The first half focuses on core and pelvic muscles with a gentle vinyasa,
                                             perfect for beginners and postpartum moms. The second half includes
@@ -392,6 +393,48 @@
                                         with a
                                         similar sense of support and honor during this sacred time.
                                     </p>
+                                    <ul class="modal-gallery">
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony01.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb01.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony02.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb02.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony03.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb03.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony04.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb04.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony05.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb05.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony06.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb06.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony07.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb07.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./dist/images/ceremony/MotherBlessingCeremony08.jpg" data-lightbox="ceremony">
+                                                <img src="./dist//images//ceremony//thumbs/thumb08.jpg" alt="Mother Blessing Ceremony photo">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="modal__container__bottom">
                                     <a href="#contact" onclick="closeModal()">I’m Interested</a>
@@ -625,6 +668,8 @@
         </main>
     </div>
     <script src="./dist/js/main.js"></script>
+    <script src="./dist/js/jquery-3.6.3.min.js"></script>
+    <script src="./dist/js/lightbox.js"></script>
     <script src="./dist/js/unpkg.com_aos@3.0.0-beta.6_dist_aos.js"></script>
     <script>
         AOS.init();
