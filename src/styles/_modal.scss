@@ -77,6 +77,70 @@
             flex-grow: 2;
             overflow-y: auto;
 
+            .moons-container {
+
+                ul {
+                    padding: 10px 20px;
+
+                    .moon-card {
+                        border-radius: 6px;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        display: flex;
+                        gap: 40px;
+                        padding: 20px;
+                        margin-bottom: 20px;
+
+                        .pink-title {
+                            color: variables.$pinkMoon;
+                            margin-bottom: 6px;
+                        }
+
+                        .orange-title {
+                            color: variables.$orangeMoon;
+                            margin-bottom: 6px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                        }
+
+                        .moon {
+                            max-width: 160px;
+                            width: 100%;
+                        }
+
+                        .moon-items {
+                            padding: 10px 0;
+
+                            li {
+                                padding: 0;
+                                margin-top: 16px;
+                            }
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            flex-direction: column;
+                            gap: 20px;
+
+                            .moon {
+                                width: 94px;
+                                margin: 0 auto;
+                            }
+
+                            h3 {
+                                text-align: center;
+                            }
+
+                            span {
+                                display: block;
+                                text-align: center;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
             .modal-page {
                 display: none;
             }
