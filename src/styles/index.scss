@@ -228,3 +228,23 @@ hr {
 .bold {
     font-weight: bold;
 }
+
+#custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 6px;
+    background-color: #D0B49F;
+
+    @media (max-width: 767px) {
+        width: 6px;
+    }
+}
+
+#custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #A47551;
+
+    @media (max-width: 767px) {
+        border-radius: 5px;
+    }
+}
