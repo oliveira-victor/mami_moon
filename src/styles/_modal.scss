@@ -177,8 +177,11 @@
         &__bottom {
             text-align: center;
 
-            button {
-                cursor: pointer;
+            a {
+                background-color: variables.$forthColor;
+                color: variables.$neutralColor;
+                padding: 10px 20px;
+                border-radius: 6px;
             }
         }
 
