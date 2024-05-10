@@ -192,4 +192,22 @@
             }
         }
     }
+
+    .social-link {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        color: variables.$secondaryColor;
+        padding-bottom: 30px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 30px;
+        }
+    }
 }
