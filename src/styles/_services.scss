@@ -21,12 +21,12 @@
 
                 &__question {
                     background-color: variables.$neutralColor;
-                    color: variables.$mainColor;
+                    color: variables.$secondaryColor;
                     padding: 26px;
                     position: relative;
                     font-weight: bold;
                     cursor: pointer;
-                    border-bottom: 1px solid variables.$mainColor;
+                    border-bottom: 1px solid variables.$secondaryColor;
 
                     &::after {
                         content: '+';
