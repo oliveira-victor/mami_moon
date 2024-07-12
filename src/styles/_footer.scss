@@ -6,6 +6,14 @@
     font-size: 16px;
     background-color: variables.$mainColor;
 
+    & a {
+        color: #58371d;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     &__dev {
         font-size: 14px;
     }
