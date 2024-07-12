@@ -10,13 +10,14 @@
     align-items: center;
 
     &__text {
+        max-height: 60vh;
         width: 60%;
         text-align: center;
         color: #fff;
         font-size: 48px;
 
         & img {
-            width: 500px;
+            width: 30vw;
             display: block;
             margin: 0 auto;
             padding-bottom: 80px;
