@@ -1,0 +1,35 @@
+@use 'variables';
+
+.workshops {
+
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            max-width: 560px;
+
+            & img {
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+            }
+
+            & .workshop-btn {
+                background-color: variables.$secondaryColor;
+                color: variables.$thirdColor;
+                width: 100%;
+                display: block;
+                text-align: center;
+                padding: 20px 0;
+                text-transform: uppercase;
+                font-weight: 700;
+                border-radius: 0 0 8px 8px;
+
+                .link-icon {
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
