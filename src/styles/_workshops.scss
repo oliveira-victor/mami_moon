@@ -9,6 +9,8 @@
 
         &__item {
             max-width: 560px;
+            margin-bottom: 20px;
+            transition: all .3s ease;
 
             & img {
                 width: 100%;
@@ -16,19 +18,28 @@
             }
 
             & .workshop-btn {
-                background-color: variables.$secondaryColor;
-                color: variables.$thirdColor;
+                /* background-color: variables.$secondaryColor; */
+                background: rgb(164, 117, 81);
+                background: linear-gradient(90deg, rgba(164, 117, 81, 1) 0%, rgba(228, 178, 109, 1) 52%, rgba(164, 117, 81, 1) 100%);
+                color: #5c3f29;
                 width: 100%;
                 display: block;
                 text-align: center;
                 padding: 20px 0;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: bolder;
                 border-radius: 0 0 8px 8px;
+                transition: all .3s ease;
 
                 .link-icon {
                     height: 20px;
                 }
+            }
+
+            &:hover .workshop-btn {
+                background: rgb(164, 117, 81);
+                background: linear-gradient(90deg, rgba(164, 117, 81, 1) 0%, rgba(228, 178, 109, 1) 16%, rgba(228, 178, 109, 1) 85%, rgba(164, 117, 81, 1) 100%);
+                color: #5c3f29;
             }
         }
     }

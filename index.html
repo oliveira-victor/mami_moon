@@ -751,20 +751,33 @@
                 </div>
                 <div class="workshops wrapper">
                     <h2 class="title">Workshops</h2>
-                    <ul class="workshops__list">
-                        <li class="workshops__list__item">
-                            <a href="https://breathingspacedc.com/expecting-joy-prenatal-couples-partners-workshop.html" target="_blank">
-                                <img src="./dist/images/workshop1.jpeg"
-                                    alt="Expecting joy - a workshop for pregnant couples">
-                                <div class="workshop-btn">Learn more</div>
-                            </a>
-                        </li>
-                        <li class="workshops__list__item">
-                            <a href="https://breathingspacedc.com/nurturing-you-self-care-pregnancy-postpartum.html" target="_blank"></a>
-                            <img src="./dist/images/workshop2.jpeg" alt="Mama Care Workshop">
-                            <div class="workshop-btn">Learn more</div>
-                        </li>
-                    </ul>
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <ul class="workshops__list">
+                                <li class="workshops__list__item">
+                                    <a href="https://breathingspacedc.com/expecting-joy-prenatal-couples-partners-workshop.html"
+                                        target="_blank">
+                                        <img src="./dist/images/workshop1.jpeg"
+                                            alt="Expecting joy - a workshop for pregnant couples">
+                                        <div class="workshop-btn">Learn more</div>
+                                    </a>
+                                </li>
+                                <li class="workshops__list__item">
+                                    <a href="https://breathingspacedc.com/nurturing-you-self-care-pregnancy-postpartum.html"
+                                        target="_blank">
+                                        <img src="./dist/images/workshop2.jpeg" alt="Mama Care Workshop">
+                                        <div class="workshop-btn">Learn more</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel-control prev">‹</button>
+                        <button class="carousel-control next">›</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -874,7 +887,7 @@
                 <p><span id="year">2023</span> - Mami Moon • by Jacque Souza</p>
                 <span class="footer__dev">Page designed and developed by <nobr><a
                             href="https://github.com/oliveira-victor" target="_blank">Victor F. Oliveira</a></nobr>
-                    </span>
+                </span>
             </footer>
             <div class="empty-space"></div>
         </main>
@@ -883,6 +896,7 @@
     <script src="./dist/js/jquery-3.6.3.min.js"></script>
     <script src="./dist/js/lightbox.js"></script>
     <script src="./dist/js/unpkg.com_aos@3.0.0-beta.6_dist_aos.js"></script>
+    <script src="./dist/js/carousel.js"></script>
     <script>
         AOS.init();
     </script>
