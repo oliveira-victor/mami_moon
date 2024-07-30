@@ -1,110 +1,154 @@
 @use 'variables';
 
 .about {
-    display: flex;
-    align-items: center;
-    
-    &__bio {
-        min-height: 70vh;
-        display: grid;
-        grid-template-columns: 30% auto;
-        gap: 50px;
 
-        &__imgContainer {
-            display: flex;
-            align-items: center;
-        }
+    &__container {
+        display: flex;
+        align-items: center;
 
-        &__jacque {
-            width: 100%;
-            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-            transition: all 2s ease;
-        }
+        &__bio {
+            min-height: 70vh;
+            display: grid;
+            grid-template-columns: 30% auto;
+            gap: 50px;
 
-        &__tabs {
-            padding: 0 16px;
-
-            & .is-selected {
-                border-bottom: 2px solid variables.$forthColor;
+            &__imgContainer {
+                display: flex;
+                align-items: center;
             }
 
-            &__tab {
-                color: variables.$forthColor;
-                background-color: transparent;
-                font-size: 20px;
-                font-weight: bold;
-                text-transform: uppercase;
-                margin: 0 10px;
-                padding: 4px 10px;
-                border: none;
-                border-bottom: 2px solid transparent;
-                cursor: pointer;
+            &__jacque {
+                width: 100%;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+                transition: all 2s ease;
+            }
+
+            &__tabs {
+                padding: 0 16px;
+
+                & .is-selected {
+                    border-bottom: 2px solid variables.$forthColor;
+                }
+
+                &__tab {
+                    color: variables.$forthColor;
+                    background-color: transparent;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: 0 10px;
+                    padding: 4px 10px;
+                    border: none;
+                    border-bottom: 2px solid transparent;
+                    cursor: pointer;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 16px;
+                        padding: 0;
+                        margin-top: 40px;
+                    }
+                }
 
                 @media screen and (max-width: 767px) {
-                    font-size: 16px;
-                    padding: 0;
-                    margin-top: 40px;
+                    text-align: center;
                 }
             }
 
+            &__text {
+                padding: 26px;
+
+                & h3 {
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                }
+
+                & .bio-subtitle {
+                    font-size: 16px;
+                }
+
+                & .txt-expect {
+                    display: none;
+                }
+            }
+
+
             @media screen and (max-width: 767px) {
-                text-align: center;
+                & h2 {
+                    margin-top: 60px;
+                    padding-bottom: 0px;
+                }
+
+                & h3 {
+                    padding: 0 26px;
+                }
             }
         }
+    }
 
-        &__text {
-            padding: 26px;
+    &__comments {
+        padding: 60px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
-            & h3 {
-                font-size: 26px;
-                margin-bottom: 20px;
-            }
+        &__item {
+            width: 30%;
+            min-width: 270px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0px 10px 15px rgba($color: #000000, $alpha: 0.3);
+            transition: all .3s ease;
 
-            & .bio-subtitle {
+            & p {
                 font-size: 16px;
             }
 
-            & .txt-expect {
-                display: none;
+            & span {
+                display: block;
+                text-align: end;
+                font-weight: 700;
+            }
+
+            @media screen and (max-width: 767px) {
+                padding: 10px;
+
+                p {
+                    font-size: 14px;
+                }
             }
         }
 
-
         @media screen and (max-width: 767px) {
-            & h2 {
-                margin-top: 60px;
-                padding-bottom: 0px;
-            }
-
-            & h3 {
-                padding: 0 26px;
-            }
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            justify-content: left;
+            margin-right: 20px;
         }
     }
 }
 
 @media screen and (max-width: 767px) {
     .about {
-        &__parallax {
-            height: 60vh;
 
-            & p {
-                margin: 50px auto;
-            }
-        }
-
-        &__bio {
-            display: block;
-
-            &__jacque {
-                width: 80%;
+        &__container {
+            &__bio {
                 display: block;
-                margin: 0 auto;
-            }
 
-            &__text {
-                padding: 6px;
-                margin-top: 40px;
+                &__jacque {
+                    width: 80%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                &__text {
+                    padding: 6px;
+                    margin-top: 40px;
+                }
             }
         }
     }
