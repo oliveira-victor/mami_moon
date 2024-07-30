@@ -86,6 +86,17 @@ function showOrHide(element) {
     parentElement.classList.toggle(toggleClass);
 }
 
+// Resources modal
+const resources = document.getElementById('resources');
+
+function openResources() {
+    resources.classList.add('showModal');
+}
+
+function closeResources() {
+    resources.classList.remove('showModal');
+}
+
 // Modal
 
 const modal = document.getElementById('modal');
