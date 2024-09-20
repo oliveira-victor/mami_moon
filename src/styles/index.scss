@@ -190,6 +190,14 @@ hr {
     }
 }
 
+.resources-container {
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .empty-space {
     display: none;
 

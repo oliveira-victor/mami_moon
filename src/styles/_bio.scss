@@ -95,7 +95,8 @@
         &__item {
             width: 30%;
             min-width: 270px;
-            background-color: #fff;
+            background-color: variables.$secondaryColor;
+            color: #fff;
             padding: 20px;
             border-radius: 6px;
             display: flex;
