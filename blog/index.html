@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Doula Mami Moon</title>
+</head>
+
+<body>
+    <h1 id="blog-title"></h1>
+    <p id="blog-subtitle"></p>
+
+    <script>
+        const blogTitle = document.getElementById('blog-title');
+        const blogSubtitle = document.getElementById('blog-subtitle');
+
+        async function fetchData(apiUrl) {
+            try {
+                const response = await fetch(apiUrl);
+
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok (status: ${response.status})`);
+                }
+
+                const data = await response.json();
+
+                console.log(data);
+
+                blogTitle.innerText = data.name;
+                blogSubtitle.innerText = data.description;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        const apiUrl = 'https://blog.doulamamimoon.com/wp-json';
+        fetchData(apiUrl);
+    </script>
+</body>
+
+</html>
