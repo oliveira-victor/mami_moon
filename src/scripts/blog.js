@@ -22,13 +22,7 @@ function handleTime(timeData) {
         year: 'numeric'
     });
 
-    const formattedTime = dateObj.toLocaleTimeString('en-US', {
-        hour: 'numeric',
-        minute: '2-digit',
-        hour12: true
-    });
-
-    return `${formattedDate} at ${formattedTime}`
+    return `${formattedDate}`
 }
 
 function posts(data) {
