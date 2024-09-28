@@ -7,25 +7,48 @@ function shortenTitle(post) {
     if (post.length > 30) {
         return post.slice(0, 30) + "..."
     }
-    
+
     return post
 }
 
+function handleTime(timeData) {
+
+    const dateStr = timeData.date;
+    const dateObj = new Date(dateStr);
+
+    const formattedDate = dateObj.toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    });
+
+    const formattedTime = dateObj.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+    });
+
+    return `${formattedDate} at ${formattedTime}`
+}
+
 function posts(data) {
-    loader.classList.add('disapear')
+
+    loader.classList.add('disapear');
+
     for (let i = 0; i < data.length; i++) {
         postsBox.insertAdjacentHTML("beforeend", `
             <div class="post-container fade-in">
                 <h2 id="${data[i].slug}">${data[i].title.rendered}</h2>
+                <p class="post-date">${handleTime(data[i])}</p>
                 <p>${data[i].content.rendered}</p>
             </div>
             <br><hr>
-        `)
+        `);
         postsMenu.insertAdjacentHTML("beforeend", `
             <a href="#${data[i].slug}">
                 <button class="post-btn" type="button">${shortenTitle(data[i].title.rendered)}</button>
             </a>
-        `)
+        `);
         phoneMenu.insertAdjacentHTML("beforeend", `
             <li>
                 <a href="#${data[i].slug}">
@@ -35,7 +58,7 @@ function posts(data) {
             <li>
                 ★
             </li>
-        `)
+        `);
     }
 }
 
@@ -49,10 +72,10 @@ async function fetchData(postsUrl) {
 
         const data = await response.json();
 
-        console.log(data);
         posts(data)
 
     } catch (error) {
+        postsBox.innerHTML = "<p class='error-msg'>Oops! There's an unexpected error. ;/ Try again later.</p>"
         console.error('Error fetching data:', error);
     }
 }
