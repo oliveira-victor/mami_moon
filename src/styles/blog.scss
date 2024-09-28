@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'animation';
+@use 'footer';
 
 html {
     scroll-behavior: smooth;
@@ -24,6 +25,7 @@ h1 {
 
 h2 {
     font-size: 60px;
+    font-family: "Cardo", serif;
 
     @media screen and (max-width: 767px) {
         font-size: 32px;
@@ -37,6 +39,7 @@ a {
 
 p {
     line-height: 1.4;
+    font-family: "Lora", serif;
 }
 
 .wrapper {
@@ -64,6 +67,7 @@ p {
     width: 94%;
     margin: 0 auto;
     padding: 60px 10px;
+    min-height: 70vh;
 }
 
 .header-blog {
@@ -108,6 +112,77 @@ p {
             margin-inline-end: 0;
             unicode-bidi: isolate;
         }
+    }
+}
+
+#posts-menu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    & .post-btn {
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 16px;
+        padding: 6px 10px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        transition: all .2s ease;
+        text-wrap: nowrap;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.4);
+            background-color: #ffffff;
+            color: variables.$forthColor;
+            text-decoration: none;
+            border: 1px solid transparent;
+        }
+    }
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    background-color: variables.$mainColor;
+
+    & a {
+        color: #58371d;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__dev {
+        font-size: 14px;
+    }
+}
+
+#blog-phone-menu {
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    list-style: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 20px 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+
+    & li {
+        text-wrap: nowrap;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
     }
 }
 
