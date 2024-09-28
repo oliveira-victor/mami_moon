@@ -76,3 +76,9 @@ async function fetchData(postsUrl) {
 
 const postsUrl = 'https://blog.doulamamimoon.com/wp-json/wp/v2/posts';
 fetchData(postsUrl);
+
+// FOOTER YEAR
+const d = new Date();
+let year = d.getFullYear();
+
+document.getElementById('year').innerHTML = year;
