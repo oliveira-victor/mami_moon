@@ -9,6 +9,7 @@
 @use 'packages';
 @use 'workshops';
 @use 'carousel';
+@use 'blogContainer';
 @use 'contact';
 @use 'footer';
 @use 'sent';
@@ -105,6 +106,10 @@ hr {
     @media screen and (max-width: 767px) {
         font-size: 7vw;
     }
+}
+
+.margint-top-60 {
+    margin-top: 60px;
 }
 
 .justify-right {

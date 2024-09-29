@@ -29,6 +29,10 @@ function posts(data) {
 
     loader.classList.add('disapear');
 
+    if (data.length === 0) {
+        return postsBox.innerHTML = '<p style="text-align: center;">No posts yet. Check back later. :)</p>'
+    }
+
     for (let i = 0; i < data.length; i++) {
         postsBox.insertAdjacentHTML("beforeend", `
             <div class="post-container fade-in">

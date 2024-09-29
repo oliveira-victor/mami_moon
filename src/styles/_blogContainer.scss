@@ -1,0 +1,44 @@
+@use 'variables';
+
+.blog-container {
+    background-color: variables.$thirdColor;
+    background-image: url(../../dist/images/blog-bg.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__border {
+        border: 2px dashed #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+
+        &__content {
+            max-width: 600px;
+            margin: 40px;
+            text-align: center;
+
+            &__button {
+                padding: 10px 40px;
+                font-size: 20px;
+                border: none;
+                border-radius: 4px;
+                color: variables.$forthColor;
+                background-color: rgba(255, 255, 255, 0.4);
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

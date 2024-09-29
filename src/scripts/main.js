@@ -147,3 +147,36 @@ const d = new Date();
 let year = d.getFullYear();
 
 document.getElementById('year').innerHTML = year;
+
+// Fetch blog posts
+const latestPost = document.getElementById('latest-post');
+
+function getLatestPost(data) {
+
+    if (data.length === 0) {
+        return
+    }
+
+    latestPost.innerHTML =  `Latest post: <strong>${data[0].title.rendered}</strong>`
+
+}
+
+async function fetchData(postsUrl) {
+    try {
+        const response = await fetch(postsUrl);
+
+        if (!response.ok) {
+            throw new Error(`Network response was not ok (status: ${response.status})`);
+        }
+
+        const data = await response.json();
+
+        getLatestPost(data);
+
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+const postsUrl = 'https://blog.doulamamimoon.com/wp-json/wp/v2/posts';
+fetchData(postsUrl);
