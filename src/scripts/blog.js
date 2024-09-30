@@ -81,6 +81,17 @@ async function fetchData(postsUrl) {
 const postsUrl = 'https://blog.doulamamimoon.com/wp-json/wp/v2/posts';
 fetchData(postsUrl);
 
+// SCROLL
+const upArrow = document.getElementById('up-arrow');
+
+window.onscroll = function () {
+    if (window.scrollY < 200) {
+        upArrow.classList.remove('show-arrow')
+    } else { 
+        upArrow.classList.add('show-arrow')
+    }
+};
+
 // FOOTER YEAR
 const d = new Date();
 let year = d.getFullYear();
